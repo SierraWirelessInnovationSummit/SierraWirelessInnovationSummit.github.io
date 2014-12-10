@@ -7,6 +7,7 @@
 	<meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="resources/css/font-awesome.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="shortcut icon" href="http://www.sierrawireless.com/Images/favicon.ico">
     <link rel="apple-touch-icon" href="#">
     <link rel="apple-touch-icon" sizes="72x72" href="#">
@@ -20,18 +21,28 @@
         $("#top").sticky({topSpacing:0});
       });
     </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    	<script type="text/javascript">
-		  function initialize() {
-			var mapOptions = {
-			  center: new google.maps.LatLng(-34.397, 150.644),
-			  zoom: 8
-			};
-			var map = new google.maps.Map(document.getElementById("location"),
-				mapOptions);
-		  }
-		  google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript">
+      function initialize() {
+		var myLatlng = new google.maps.LatLng(48.849946,2.283424);
+		var image = 'resources/img/novotel.png';
+        var mapOptions = {
+          center: new google.maps.LatLng(),
+          zoom: 17,
+		  disableDefaultUI: true,
+		  center: myLatlng
+        };
+        var map = new google.maps.Map(document.getElementById("location"),
+            mapOptions);
+		var marker = new google.maps.Marker({
+			  position: myLatlng,
+			  map: map,
+			  icon: image,
+			  title: 'Novotel Paris Tour Eiffel'
+		  });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <!--[if lt IE 9]>
     	<script type="text/javascript" src="resources/js/html5shiv.js"></script>
 	<![endif]-->
@@ -43,7 +54,538 @@
 <![endif]-->
 </head>
 <body>
-<h1>Sierra Wireless</h1>
-<h2>Innovation Summit</h2>
+	<div class="bg"></div>
+    <div class="wrapper">
+    	<div id="introduction">
+        	<img src="resources/img/sw_logo.png" />
+        	<h1>Sierra Wireless</h1>
+            <h2>Innovation Summit</h2>
+            Early birds: register before February 28th 2015 to get 40% off
+            <br />
+            <a href="#register" class="navlink">REGISTER NOW</a>
+        </div>
+        <div id="information">
+        	<div class="container">
+                <div class="information_bucket">
+                    <img src="resources/img/sw_icon_date.png" />
+                    <h4>June 17th, 2015</h4>
+                    8.00 PM
+                </div>
+                <div class="information_bucket">
+                    <img src="resources/img/sw_icon_location.png" />
+                    <h4>Paris Novotel Tour Eiffel</h4>
+                    PARIS, FRANCE
+                </div>
+        	</div>
+        </div>
+        <div id="top">
+            <header>
+                <h1><a title="back to top" href="#introduction" class="navlink">Sierra Wireless | Innovation Summit</a></h1>
+                <nav>
+                    <a href="#overview" class="navlink">Overview</a>
+                    <a href="#agenda" class="navlink">Agenda</a>
+                    <a href="#register" class="navlink">Register</a>
+                    <a href="#sponsor" class="navlink">Sponsors</a>
+                    <a href="#map" class="navlink">Contact</a>
+                </nav>
+            </header>
+        </div>
+        <div id="overview">
+        	<h2>Discover, discuss and test tomorrow’s IoT technologies...</h2>
+            <h3>... And network with one of the most active IoT business and developer communities.</h3>
+            <div class="container_half">
+            	<img src="resources/img/sw_icon_session.png" />
+                <h4>Summit</h4>
+                <ul>
+                    <li>Plenary and breakout sessions</li>
+                    <li>Live demos from partners and customers</li>
+                    <li>Real customer cases</li>
+                    <li>Hands-on sessions</li>
+                    <li>Networking lunch and cocktail reception</li>
+                </ul>
+            </div>
+            <div class="container_half last">
+            	<img src="resources/img/sw_icon_audience.png" />
+                <h4>Business and technical audience</h4>
+                <ul>
+                    <li>Customers, distributors, technology partners, developer community</li>
+                    <li>Industry analysts, journalists and key influencers</li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="divider"></div>-->
+        <div id="numbers">
+        	<h2>By the numbers</h2>
+            <br />
+            <div class="container_fourth">
+                <img src="resources/img/sw_icon_attendees.png" />
+                <h4>300</h4>
+                participants
+            </div>
+            <div class="container_fourth">
+                <img src="resources/img/sw_icon_countries.png" />
+                <h4>20</h4>
+                countries
+            </div>
+            <div class="container_fourth">
+                <img src="resources/img/sw_icon_presentation.png" />
+                <h4>30</h4>
+                presentations
+            </div>
+            <div class="container_fourth last">
+                <img src="resources/img/sw_icon_demo.png" />
+                <h4>15</h4>
+                live demos
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="agenda">
+        	<h2>Agenda</h2>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>08:00-08:45</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Registration, booth and demo set-up</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>09:00-09:10</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Opening speech</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>09:10-09:30</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Keynote speaker</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>09:30-10:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Upcoming generation of wireless modules and gateways</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>10:00-10:20</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>LTE-M: the future of LTE for IoT</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>10:20-10:50</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Demo exhibit / refreshments / networking</h3>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>10:50-11:10</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Open source in IoT</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+			<div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>11:10-11:40</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Legato: Linux-based open source embedded platform for IoT</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>11:40-12:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Open hardware communities</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>12:00-12:30</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>AirVantage M2M cloud</h3>
+                </div>
+                <div class="agenda_element_speaker">
+                    <img src="resources/img/sw_icon_speaker.png" />
+                    <!--<h3>John Doe</h3>
+                    <h4>Head of <a href="#">Company Co.</a></h4>
+                    <a href="#"><i class="fa fa-twitter"></i> Social link</a>-->
+                </div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>12:30-14:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Demo exhibit / refreshments / networking</h3>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element_split">
+                <div class="agenda_element_time"></div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<center>BUSINESS TRACK</center>
+                        <!--<h3>Room TBD</h4>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<center>TECHNICAL TRACK</center>
+                        <!--<h3>Room TBD</h4>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>14:00-14:20</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Upraising markets in IoT</h3>
+                        <h4 class="fake"></h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Getting started with Legato</h3>
+                        <h4>Tutorial</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>14:20-14:40</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Connected vehicles</h3>
+                        <h4>use case presentation and demo</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Your 1st Legato app</h3>
+                        <h4>hands-on keyboard</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>14:40-15:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Worldwide solution deployment</h3>
+                        <h4>use case</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Components for embedded IoT app</h3>
+                        <h4>tutorial</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>14:40-15:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Round table and discussions</h3>
+                        <h4 class="fake"></h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>A simple Legato IoT app</h3>
+                        <h4>hands-on keyboard</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>15:00-15:30</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Demo exhibit / refreshments / networking</h3>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>15:30-15:50</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Smart cities</h3>
+                        <h4>use case presentation and demo</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Connect your IoT app to the cloud</h3>
+                        <h4>tutorial</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>15:50-16:10</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Embedded SIM</h3>
+                        <h4>use case presentation and demo</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Your 1st connected app</h3>
+                        <h4>hands-on keyboard</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>16:10-16:30</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Low throughput network</h3>
+                        <h4>use case</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>Components for IoT enterprise server apps</h3>
+                        <h4>tutorial</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>16:30-17:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                	<div class="agenda_element_half">
+                    	<h3>Round table and discussions</h3>
+                        <h4 class="fake"></h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                    <div class="agenda_element_half">
+                    	<h3>A simple IoT enterprise app</h3>
+                        <h4>hands-on keyboard</h4>
+                        <!--<div class="agenda_element_half_speaker">
+                            <img src="resources/img/sw_icon_speaker.png" />
+                            <h5>John Doe</h5>
+                            <h6>Head of <a href="#">Company Co.</a></h6>
+                            <a href="#"><i class="fa fa-twitter"></i> Social link</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+            <div class="agenda_element">
+                <div class="agenda_element_time">
+                    <h3>17:00-19:00</h3>
+                    <!--<h4>Room TBD</h4>-->
+                </div>
+                <div class="agenda_element_title">
+                    <h3>Demo exhibit / refreshments / networking</h3>
+                </div>
+                <div class="agenda_element_speaker"></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div id="register">
+            <h3>Early birds: register before February 28th 2015 to get 40% off</h3>
+            <a href="https://www.regonline.com/swiris" target="_blank">REGISTER NOW</a>
+        </div>
+        <div id="sponsor">
+        	<h2>Sponsors</h2>
+            <h3>Lorem ipsum dolor sic amet consectum</h3>
+        </div>
+        <div id="map">
+        	<div id="location"></div>
+        </div>
+        <div id="contact">
+        	<h2>Contact us</h2>
+            <img src="resources/img/sw_is_thibaud-cantegrel.png" />
+            <h5>Thibault Cantegrel</h5>
+            <h6>Director of Developer Program at <a href="http://www.sierrawireless.com" target="_blank">Sierra Wireless</a></h6>
+            <a href="mailto:tcantegrel@sierrawireless.com"><i class="fa fa-envelope"></i> tcantegrel@sierrawireless.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-twitter"></i> @sierradeveloper</a>
+        </div>
+        <div id="footer">
+        	<img src="resources/img/sw_logo.png" />
+            ©2014 Sierra Wireless. All rights reserved.
+        </div>
+	</div>
 </body>
 </html>

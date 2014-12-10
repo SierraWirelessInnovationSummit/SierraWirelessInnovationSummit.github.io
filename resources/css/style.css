@@ -1,0 +1,1184 @@
+/*******************
+ *     GLOBAL     *
+ *******************/
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'xcnd-lgt';
+    src: url('../fonts/xcnd-lgt.eot');
+    src: url('../fonts/xcnd-lgt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/xcnd-lgt.woff') format('woff'),
+		 url('../fonts/xcnd-lgt.woff2') format('woff2'),
+         url('../fonts/xcnd-lgt.ttf') format('truetype'),
+         url('../fonts/xcnd-lgt.svg#xcnd-lgt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-lgt';
+    src: url('../fonts/x-lgt.eot');
+    src: url('../fonts/x-lgt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-lgt.woff') format('woff'),
+		 url('../fonts/x-lgt.woff2') format('woff2'),
+         url('../fonts/x-lgt.ttf') format('truetype'),
+         url('../fonts/x-lgt.svg#x-lgt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-xlt';
+    src: url('../fonts/x-xlt.eot');
+    src: url('../fonts/x-xlt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-xlt.woff') format('woff'),
+		 url('../fonts/x-xlt.woff2') format('woff2'),
+         url('../fonts/x-xlt.ttf') format('truetype'),
+         url('../fonts/x-xlt.svg#x-xlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-thn';
+    src: url('../fonts/x-thn.eot');
+    src: url('../fonts/x-thn.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-thn.woff') format('woff'),
+		 url('../fonts/x-thn.woff2') format('woff2'),
+         url('../fonts/x-thn.ttf') format('truetype'),
+         url('../fonts/x-thn.svg#x-thn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-lt';
+    src: url('../fonts/l-lt.eot');
+    src: url('../fonts/l-lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-lt.woff') format('woff'),
+         url('../fonts/l-lt.ttf') format('truetype'),
+         url('../fonts/l-lt.svg#l-lt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-rg';
+    src: url('../fonts/l-rg.eot');
+    src: url('../fonts/l-rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-rg.woff') format('woff'),
+         url('../fonts/l-rg.ttf') format('truetype'),
+         url('../fonts/l-rg.svg#l-rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-hl';
+    src: url('../fonts/l-hl.eot');
+    src: url('../fonts/l-hl.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-hl.woff') format('woff'),
+         url('../fonts/l-hl.ttf') format('truetype'),
+         url('../fonts/l-hl.svg#l-hl') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'swop_icons';
+    src: url('../fonts/swop_icons.eot');
+    src: url('../fonts/swop_icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/swop_icons.woff') format('woff'),
+         url('../fonts/swop_icons.ttf') format('truetype'),
+         url('../fonts/swop_icons.svg#swop_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'l-lt', arial, sans;
+	color: rgb(139,139,139);
+	text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+a img {
+    border: none;
+}
+
+table, h1, h2, h3, h4, h5, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+/******************
+ *     COMMON     *
+ ******************/
+
+div.wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.red {
+	color: rgb(229,59,48);
+	font-family: 'l-rg', arial, sans;
+}
+
+h2 {
+	font-family: 'x-xlt', sans-serif;
+	color: rgb(229,59,48);
+	font-weight: normal;
+	position: relative;
+	padding-bottom: 40px;
+	display: block;
+	font-size: 2.7vw;
+	text-align: center;
+}
+
+
+h3 {
+	font-weight: normal;
+	display: block;
+	font-size: 1.4vw;
+	color: rgb(39,39,39);
+	margin-bottom: 50px;
+}
+
+div.bullet {
+	min-height: 1px;
+	border-bottom: 1px solid rgb(229,59,48);
+	float: left;
+	position: relative;
+	width: 6%;
+	height: 24px; /*1024 display standard version*/
+}
+
+p {
+	font-weight: normal;
+	float: left;
+	position: relative;
+	text-align: left;
+	padding-left: 10%;
+	margin: 0px;
+	clear: both;
+	color: rgb(139,139,139);
+	line-height: 24px; /*1024 display standard version*/
+	font-size: 18px; /*1024 display standard version*/
+}
+
+div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#contact, div#footer {
+	margin: 0 auto;
+	position: relative;
+	clear: both;
+	padding-top: 100px; /*1024 display standard version*/
+	width: 92%; /*1024 display standard version*/
+	padding-left: 4%; /*1024 display standard version*/
+	padding-right: 4%; /*1024 display standard version*/
+	padding-bottom: 100px; /*1024 display standard version*/
+	font-size: 1.3vw;
+}
+
+.details {
+	background-color: rgb(228,241,254);
+	width: 80%;
+	border-bottom: 10px solid rgb(204,228,253);
+	clear: both;
+	margin-left: 10%;
+	padding: 40px 5%;
+	line-height: 30px;
+	color: rgb(139,139,139);
+}
+
+.details h4 {
+	font-size: 35px;
+	color: rgba(229,59,48,1);
+	font-weight: normal;
+	padding-bottom: 12px;
+	display: block;
+}
+
+ul.details {
+}
+
+.details li {
+	float: left;
+	display: inline;
+	width: 50%;
+}
+
+div.bg {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 30vw;
+    width: 100%;
+    background: url('../img/bg.jpg') center center no-repeat #000;
+    background-size: 2000px 701px;
+	border-top: 3px solid rgb(229,59,48);
+}
+
+.container_half {
+	float: left;
+	width: 45%;
+	margin-right: 5%;
+	color: rgb(139,139,139);
+	font-weight: normal;
+	font-size: 1vw;
+}
+
+.container_half h3 {
+	text-align: left;
+}
+
+.container_half img {
+	width: 20%;
+	margin: 0 40%;
+}
+
+.container_third {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	color: rgb(139,139,139);
+	font-weight: normal;
+	font-size: 1vw;
+}
+
+.container_third img {
+	width: 20%;
+	margin: 0 40%;
+}
+
+.container_third h4, .container_fourth h4, .container_half h4 {
+	font-family: 'x-xlt', sans-serif;
+	color: rgb(39,39,39);
+	font-weight: normal;
+	display: block;
+	font-size: 2vw;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.container_third h4, .container_fourth h4 {
+	padding: 12px 0px;
+}
+
+.container_half h4 {
+	padding: 12px 0px 0px 0px;
+}
+
+.container_third ul {
+	padding-left: 30px;
+}
+
+.container_half ul {
+	margin: 0 25%;
+}
+
+.container_half ul {
+	width: 50%;
+}
+
+.container_third li, .container_half li {
+	list-style: disc;
+}
+
+.container_fourth {
+	float: left;
+	width: 20%;
+	margin-right: 6%;
+	color: rgb(139,139,139);
+	font-weight: normal;
+	font-size: 1vw;
+	text-align: center;
+	color: #fff;
+}
+
+.container_fourth h4 {
+	color: #fff;
+	font-size: 3vw;
+}
+
+.container_fourth img {
+	width: 35%;
+	margin: 0 32.5%;
+}
+
+.container_half img.restore {
+	width: 70%;
+	margin: 0 15%;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+div.divider {
+	margin: auto;
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 5vw;
+	background-color: transparent;
+}
+
+/******************
+ *  INTRODUCTION  *
+ ******************/
+
+div#introduction {
+	margin: auto;
+	position: relative;
+	clear: both;
+	padding-top: 9vw; /*1024 display standard version*/
+	width: 92%; /*1024 display standard version*/
+	padding-left: 4%; /*1024 display standard version*/
+	padding-right: 4%; /*1024 display standard version*/
+	height: 21vw;
+	text-align: center;
+	color: #FFF;
+	font-size: 2vw;
+}
+
+div#introduction img {
+	position: absolute;
+	top: 10%;
+	left: 4%;
+	width: 14vw;
+}
+
+div#introduction h1 {
+	font-family: 'l-lt', sans-serif;
+	color: #e53b30;
+	font-weight: normal;
+	display: block;
+	font-size: 2vw; /*1024 display standard version*/
+	text-transform: uppercase;
+}
+
+div#introduction h2 {
+	font-family: 'x-xlt', sans-serif;
+	color: rgb(255,255,255);
+	font-weight: normal;
+	padding-bottom: 12px;
+	display: block;
+	font-size: 5vw; /*1024 display standard version*/
+	margin-top: -1vw;
+}
+
+div#introduction a {
+	display: inline-block;
+	color: #e53b30;
+	text-transform: uppercase;
+	padding: 1% 2%;
+	text-align: center;
+	cursor: pointer;
+	background-color: transparent;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e53b30;
+	font-size: 1vw;
+	margin-top: 1vw;
+	font-family: 'l-rg', sans-serif;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+div#introduction a:hover {
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+}
+
+/******************
+ *  INFORMATION   *
+ ******************/
+
+div#information {
+	margin: 0 auto;
+	position: relative;
+	clear: both;
+	padding-top: 30px; /*1024 display standard version*/
+	width: 92%; /*1024 display standard version*/
+	padding-left: 4%; /*1024 display standard version*/
+	padding-right: 4%; /*1024 display standard version*/
+	background-color: rgb(28,28,28);
+	height: 95px;
+	color: rgb(255,255,255);
+	font-size: 1vw;
+}
+
+div#information .container {
+	margin: auto;
+	width: 1000px;
+}
+
+div#information .information_bucket {
+	float: left;
+	width: 50%;
+	height: 64px;
+}
+
+div#information img {
+	float: left;
+	width: 64px;
+	margin-right: 25px;
+}
+
+div#information h4 {
+	color: #e53b30;
+	font-weight: normal;
+	display: block;
+	font-size: 1.5vw; /*1024 display standard version*/
+}
+
+/******************
+ *      TOP       *
+ ******************/
+
+#top {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	background: rgb(229,59,48);
+	height: 65px; /*1024 display standard version*/
+}
+
+header {
+	margin: auto;
+	position: relative;
+	width: 92%; /*1024 display standard version*/
+}
+
+header h1 a {
+    position: absolute;
+    left: 0px;
+	text-indent: -9000px;
+	top: 18px; /*1024 display standard version*/
+	width: 50px; /*1024 display standard version*/
+	height: 51px; /*1024 display standard version*/
+	background: url("../img/sw_logo.png") no-repeat 0px 0px; /*1024 display standard version*/
+	background-size: 150px;
+}
+
+nav {
+    position: absolute;
+    right: 0px;
+	top: 23px; /*1024 display standard version*/
+}
+
+nav a {
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+	font-size: 13px; /*1024 display standard version*/
+	padding: 9px 0px; /*1024 display standard version*/
+	margin-left: 100px;
+	border-bottom: 3px solid #e53b30;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+	border-bottom: 3px solid #fff;
+}
+
+nav a.link-selected {
+	padding: 9px 0px; /*1024 display standard version*/
+	margin-left: 100px;
+	border-bottom: 3px solid #FFF;
+}
+
+#sign {
+    position: absolute;
+    right: 0px;
+	top: 0px;
+	height: 25px;
+}
+
+#sign a {
+	font-size: 13px;
+	padding: 5px 15px 7px 15px;
+	margin: 0px;
+	display: inline-block;
+}
+
+#sign a.signinlink {
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	background-color: rgb(229,59,48);
+}
+
+#sign a.signuplink {
+	color: rgb(0, 0, 0);
+}
+
+
+/******************
+ *    OVERVIEW    *
+ ******************/
+ 
+div#overview {
+	background-color: rgb(245,245,245);
+	height: 25vw;
+}
+
+/******************
+ * BY THE NUMBERS *
+ ******************/
+ 
+div#numbers {
+	background: url('../img/btn.jpg') center center no-repeat #000;
+    background-size: 1920px 700px;
+	height: 20vw;
+}
+
+div#numbers h2 {
+	color: #fff;
+}
+
+/******************
+ *     AGENDA     *
+ ******************/
+ 
+div#agenda {
+	background-color: rgb(245,245,245);
+	height: 120vw;
+}
+
+div#agenda .agenda_element {
+	width: 85%;
+	margin: 0 auto;
+	border-top: 1px solid #dfdfdf;
+	position: relative;
+	clear: both;
+}
+
+div#agenda .agenda_element_time, div#agenda .agenda_element_title, div#agenda .agenda_element_speaker {
+	float: left;
+	padding-top: 1vw;
+}
+
+div#agenda .agenda_element_time {
+	width: 25%;
+}
+
+div#agenda .agenda_element_title {
+	width: 50%;
+	text-align: center;
+}
+
+div#agenda .agenda_element_speaker {
+	width: 25%;
+}
+
+div#agenda .agenda_element_time h3 {
+	font-family: 'x-lgt', sans-serif;
+	font-size: 1.1vw;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.5vw;
+	color: #bbb;
+}
+
+div#agenda .agenda_element_time h4 {
+	font-size: 0.6vw;
+	margin: 0;
+	padding: 0.3vw 0.5vw 0.4vw 0.5vw;
+	display: inline-block;
+	background-color: transparent;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e53b30;
+	color: #e53b30;
+}
+
+div#agenda .agenda_element_title h3 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 2vw;
+}
+
+div#agenda .agenda_element_speaker img {
+	width: 3vw;
+	float: left;
+	margin: 0 1vw 1vw 1vw;
+}
+
+div#agenda .agenda_element_speaker h3 {
+	font-family: 'x-lgt', sans-serif;
+	font-size: 1.4vw;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #e53b30;
+	
+}
+
+div#agenda .agenda_element_speaker h4 {
+	font-size: 1.0vw;
+	font-weight: normal;
+	margin: 0;
+	color: #999;
+	padding-bottom: 0.5vw;
+}
+
+div#agenda .agenda_element_speaker h4 a {
+	font-size: 1.0vw;
+	font-weight: normal;
+	color: #444;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+div#agenda .agenda_element_speaker a {
+	font-size: 0.8vw;
+	margin: 0;
+	color: #444;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+div#agenda .agenda_element_speaker h4 a:hover, div#agenda .agenda_element_speaker a:hover {
+	color: #e53b30;
+}
+
+div#agenda .agenda_element_split {
+	width: 85%;
+	margin: 0 auto;
+	border-top: 1px solid #dfdfdf;
+	position: relative;
+	clear: both;
+	background-color: rgba(255,255,255,0.5);
+	height: 3vw;
+}
+
+div#agenda .agenda_element_half {
+	float: left;
+	width: 50%;
+	font-family: 'x-lgt', sans-serif;
+	font-size: 1.0vw;
+	color: #e53b30;
+}
+
+div#agenda .agenda_element_half h3 {
+	font-family: 'l-lt', sans-serif;
+	font-size: 1.2vw;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	padding-bottom: 0.5vw;
+}
+
+div#agenda .agenda_element_half h4 {
+	font-family: 'l-lt', sans-serif;
+	font-size: 0.8vw;
+	color: #999;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0.4vw 0.6vw;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-bottom: 0.8vw;
+}
+
+div#agenda .agenda_element_half h4.fake {
+	color: rgb(245,245,245);
+	background-color: transparent;
+}
+
+div#agenda .agenda_element_half_speaker {
+	position: relative;
+	text-align: left;
+	border-top: 1px dashed #ddd;
+	padding-top: 0.8vw;
+}
+
+div#agenda .agenda_element_half_speaker img {
+	width: 2.5vw;
+	float: left;
+	margin: 0 1vw 2vw 1vw;
+}
+
+div#agenda .agenda_element_half_speaker h5 {
+	font-family: 'x-lgt', sans-serif;
+	font-size: 1.2vw;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #e53b30;
+}
+
+div#agenda .agenda_element_half_speaker h6 {
+	font-size: 0.8vw;
+	font-weight: normal;
+	margin: 0;
+	color: #999;
+	padding-bottom: 0.5vw;
+}
+
+div#agenda .agenda_element_half_speaker h6 a {
+	font-size: 0.8vw;
+	font-weight: normal;
+	color: #444;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+div#agenda .agenda_element_half_speaker a {
+	font-size: 0.6vw;
+	display: inline-block;
+	margin: 0;
+	color: #444;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	margin-bottom: 1vw;
+	margin-top: -1vw;
+}
+
+
+/******************
+ *    REGISTER    *
+ ******************/
+ 
+div#register {
+	height: 6vw;
+	background-color: rgba(28,28,28,0.75);
+	text-align: center;
+}
+
+div#register h3 {
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 2.5vw;
+	padding-top: 1.5vw;
+}
+
+div#register a {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1% 2%;
+	text-align: center;
+	cursor: pointer;
+	background-color: #e53b30;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e53b30;
+	font-size: 1vw;
+	font-family: 'l-rg', sans-serif;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/******************
+ *   SPONSOR   *
+ ******************/
+ 
+div#sponsor {
+	background-color: #fff;
+	height: 20vw;
+}
+
+/******************
+ *    LOCATION    *
+ ******************/
+
+div#map {
+	margin: 0 auto;
+	position: relative;
+	clear: both;
+	padding-top: 65px;
+	width: 100%;
+	background-color: #fff;
+}
+
+div#location {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	padding-top: 65px;
+}
+
+/******************
+ *    CONTACT     *
+ ******************/
+ 
+div#contact {
+	background-color: rgb(28,28,28);
+	color: rgb(255,255,255);
+	height: 40vw;
+	padding-top: 35px;
+}
+
+div#contact img {
+	float: left;
+	margin: 0 3vw 2vw 0;
+	width: 10vw;
+}
+
+div#contact h5 {
+	font-family: 'l-lt', sans-serif;
+	font-weight: normal;
+	font-size: 2vw;
+	margin: 0;
+	padding: 0;
+}
+
+div#contact h6 {
+	font-family: 'l-lt', sans-serif;
+	font-weight: normal;
+	font-size: 1.5vw;
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	padding-bottom: 25px;
+}
+
+div#contact h6 a {
+	color: #e53b30;
+}
+
+div#contact a {
+	color: #e53b30;
+}
+
+/******************
+ *     FOOTER     *
+ ******************/
+ 
+div#footer {
+	background-color: #000;
+	color: #666;
+	height: 1vw;
+	font-size: 1vw;
+	text-align: center;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin: 0;
+}
+
+div#footer img {
+	float: left;
+	width: 10vw;
+	opacity: 0.25;
+}
+
+/******************
+ *   RESPONSIVE   *
+ ******************/
+/*
+@media (min-width: 1240px) {
+	#top {
+		height: 130px;}
+	header {
+		width: 80%;
+		height: 130px;}
+	header h1 a {
+		top: 28px;
+		width: 270px;
+		height: 64px;
+		background: url("../img/sierra-wireless_airvantage_logo.png") no-repeat 0px 0px;}
+	nav {
+		top: 73px;}
+	nav a, nav a.link-selected {
+		font-size: 15px;
+		padding: 9px 30px;}
+	#sign a {
+		font-size: 13px;
+		padding: 5px 20px 7px 20px;}
+	div#offers, div#features, div#developers, div#enterprises, div#contact {
+		padding-left: 10%;
+		padding-right: 10%;
+		width: 80%;
+		padding-bottom: 100px;}
+	div#offers, div#features, div#developers, div#enterprises, div#contact {
+		padding-top: 220px;
+		width: 80%;}
+	iframe.video {
+		width: 560px;
+		height: 315px;}
+	a.getstarted {
+		height: 60px;
+		padding: 15px;
+		font-size: 23px;}
+	div#offers {
+		height: 800px;}
+	div#features {
+		height: 800px;}
+	div#developers {
+		height: 800px;}
+	div#enterprises {
+		height: 800px;}
+	div#contact {
+		height: 1400px;}
+	h2 {
+		font-size: 50px;}
+	h3 {
+		font-size: 30px;}
+	div.bullet {
+		height: 31px;}
+	p {
+		line-height: 30px;
+		font-size: 23px;}
+	.feature {
+		font-size: 15px;
+		line-height: 20px;
+		margin-top: 118px;
+		margin-bottom: 70px;}
+	.offer {
+		font-size: 15px;
+		line-height: 20px;
+		margin-top: 22px;
+		margin-bottom: 70px;}
+	.offer p {
+		padding-top: 75px;}
+	a.btn {
+		height: 60px;
+		padding: 15px;
+		font-size: 23px;}
+	a.link {
+		font-size: 11px;}
+	.testicon, .white {
+		font-size: 80px;
+		-moz-border-radius: 80px;
+		-webkit-border-radius: 80px;
+		border-radius: 80px;
+		padding: 32px 36px 28px 40px;}
+	.feature h4 {
+		padding-bottom: 35px;
+		font-size: 23px;
+		padding-top: 81px;}
+	.offer h4 {
+		padding-bottom: 105px;
+		font-size: 30px;}
+
+@media (min-width: 960px) and (max-width: 1240px) {
+	#top {
+		height: 105px;}
+	header {
+		width: 92%;
+		height: 105px;}
+	header h1 a {
+		top: 22px;
+		width: 216px;
+		height: 51px;
+		background: url("../img/sierra-wireless_airvantage_logo.png") no-repeat -270px 0px;}
+	nav {
+		top: 53px;}
+	nav a, nav a.link-selected {
+		font-size: 13px;
+		padding: 9px 24px;}
+	#sign a {
+		font-size: 11px;
+		padding: 5px 15px 7px 15px;}
+	div#introduction, div#offers div#features, div#developers, div#enterprises, div#contact {
+		width: 92%;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-bottom: 80px;}
+	div#offers, div#features, div#developers, div#enterprises, div#contact {
+		padding-top: 175px;}
+	div#introduction {
+		padding-top: 80px;
+		height: 685px;
+		font-size: 18px;}
+	iframe.video {
+		width: 400px;
+		height: 230px;}
+	a.getstarted {
+		height: 48px;
+		padding: 12px;
+		font-size: 18px;}
+	div#offers {
+		height: 640px;}
+	div#features {
+		height: 640px;}
+	div#developers {
+		height: 640px;}
+	div#contact {
+		height: 1120px;}
+	h2 {
+		font-size: 40px;}
+	h3 {
+		font-size: 24px;}
+	div.bullet {
+		height: 24px;}
+	p {
+		line-height: 24px;
+		font-size: 18px;}
+	.feature {
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 94px;
+		margin-bottom: 56px;}
+	.offer {
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 94px;
+		margin-bottom: 56px;}
+	.offer p {
+		padding-top: 55px;}
+	a.btn {
+		height: 48px;
+		padding: 12px;
+		font-size: 18px;}
+	a.link {
+		font-size: 10px;}
+	.testicon, .white {
+		font-size: 64px;
+		-moz-border-radius: 64px;
+		-webkit-border-radius: 64px;
+		border-radius: 64px;
+		padding: 27px 32px 24px 34px;}
+	.feature h4 {
+		padding-bottom: 15px;
+		padding-top: 55px;
+		font-size: 18px;}
+	.offer h4 {
+		font-size: 18px;
+		padding-bottom: 55px;
+		font-size: 23px;
+		padding-top: 55px;}
+
+@media (min-width: 480px) and (max-width: 960px) {
+	#top {
+		height: 105px;}
+	header {
+		width: 92%;
+		height: 105px;}
+	header h1 a {
+		top: 22px;
+		width: 216px;
+		height: 51px;
+		background: url("../img/sierra-wireless_airvantage_logo.png") no-repeat -270px 0px;}
+	nav {
+		top: 55px;}
+	nav a, nav a.link-selected {
+		font-size: 13px;
+		padding: 9px 30px;}
+	#sign a {
+		font-size: 11px;
+		padding: 5px 15px 7px 15px;}
+	div#introduction, div#offers div#features, div#developers, div#enterprises, div#contact {
+		width: 92%;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-bottom: 80px;}
+	div#offers, div#features, div#developers, div#enterprises, div#contact {
+		padding-top: 175px;}
+	div#introduction {
+		padding-top: 80px;
+		height: 685px;
+		font-size: 18px;}
+	iframe.video {
+		width: 400px;
+		height: 230px;}
+	a.getstarted {
+		height: 48px;
+		padding: 12px;
+		font-size: 18px;}
+	div#offers {
+		height: 640px;}
+	div#features {
+		height: 640px;}
+	div#developers {
+		height: 640px;}
+	div#contact {
+		height: 1120px;}
+	h2 {
+		font-size: 40px;}
+	h3 {
+		font-size: 24px;}
+	div.bullet {
+		height: 24px;}
+	p {
+		line-height: 24px;
+		font-size: 18px;}
+	.feature {
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 94px;
+		margin-bottom: 56px;}
+	.offer {
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 94px;
+		margin-bottom: 56px;}
+	.testicon, .white {
+		font-size: 64px;
+		-moz-border-radius: 64px;
+		-webkit-border-radius: 64px;
+		border-radius: 64px;
+		padding: 27px 32px 24px 34px;}
+	.feature h4, .offer h4 {
+		padding-bottom: 28px;
+		font-size: 18px;
+		padding-top: 72px;}
+	.offer h4 {
+		padding-bottom: 85px;
+		font-size: 23px;}*/
