@@ -286,7 +286,7 @@ div.bg {
 }
 
 .container_half h4 {
-	padding: 12px 0px 0px 0px;
+	padding: 15px 0px 15px 0px;
 }
 
 .container_third ul {
@@ -302,7 +302,8 @@ div.bg {
 }
 
 .container_third li, .container_half li {
-	list-style: disc;
+	list-style: circle;
+	font-size: 1.1vw;
 }
 
 .container_fourth {
@@ -319,11 +320,12 @@ div.bg {
 .container_fourth h4 {
 	color: #fff;
 	font-size: 3vw;
+	font-family: 'x-thn';
 }
 
 .container_fourth img {
 	width: 35%;
-	margin: 0 32.5%;
+	margin: 75px 32.5% 0 32.5%;
 }
 
 .container_half img.restore {
@@ -460,6 +462,15 @@ div#information h4 {
 	font-size: 1.5vw; /*1024 display standard version*/
 }
 
+.information_bucket a {
+	color: #fff;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
 /******************
  *      TOP       *
  ******************/
@@ -553,7 +564,7 @@ nav a.link-selected {
  
 div#overview {
 	background-color: rgb(245,245,245);
-	height: 25vw;
+	height: 30vw;
 }
 
 /******************

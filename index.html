@@ -30,6 +30,7 @@
           center: new google.maps.LatLng(),
           zoom: 17,
 		  disableDefaultUI: true,
+		  scrollwheel: false,
 		  center: myLatlng
         };
         var map = new google.maps.Map(document.getElementById("location"),
@@ -67,14 +68,18 @@
         <div id="information">
         	<div class="container">
                 <div class="information_bucket">
-                    <img src="resources/img/sw_icon_date.png" />
-                    <h4>June 17th, 2015</h4>
-                    8.00 PM
+                	<a href="webcal://sierrawirelessinnovationsummit.github.io/resources/img/sierra-wireless_innovation-summit-2015.ics" title="Add 'Sierra Wireless | Innovation Summit 2015' event to calendar">
+                        <img src="resources/img/sw_icon_date.png" />
+                        <h4>June 17th, 2015</h4>
+                        8.00 PM
+                    </a>
                 </div>
                 <div class="information_bucket">
-                    <img src="resources/img/sw_icon_location.png" />
-                    <h4>Paris Novotel Tour Eiffel</h4>
-                    PARIS, FRANCE
+                	<a href="#map" class="navlink">
+                        <img src="resources/img/sw_icon_location.png" />
+                        <h4>Paris Novotel Tour Eiffel</h4>
+                        PARIS, FRANCE
+                    </a>
                 </div>
         	</div>
         </div>
@@ -92,7 +97,7 @@
         </div>
         <div id="overview">
         	<h2>Discover, discuss and test tomorrow’s IoT technologies...</h2>
-            <h3>... And network with one of the most active IoT business and developer communities.</h3>
+            <h3>... and network with one of the most active IoT business and developer communities.</h3>
             <div class="container_half">
             	<img src="resources/img/sw_icon_session.png" />
                 <h4>Summit</h4>
@@ -106,7 +111,7 @@
             </div>
             <div class="container_half last">
             	<img src="resources/img/sw_icon_audience.png" />
-                <h4>Business and technical audience</h4>
+                <h4>Business and Technical Audience</h4>
                 <ul>
                     <li>Customers, distributors, technology partners, developer community</li>
                     <li>Industry analysts, journalists and key influencers</li>
@@ -115,8 +120,6 @@
         </div>
         <!--<div class="divider"></div>-->
         <div id="numbers">
-        	<h2>By the numbers</h2>
-            <br />
             <div class="container_fourth">
                 <img src="resources/img/sw_icon_attendees.png" />
                 <h4>300</h4>
@@ -580,7 +583,7 @@
             <img src="resources/img/sw_is_thibaud-cantegrel.png" />
             <h5>Thibault Cantegrel</h5>
             <h6>Director of Developer Program at <a href="http://www.sierrawireless.com" target="_blank">Sierra Wireless</a></h6>
-            <a href="mailto:tcantegrel@sierrawireless.com"><i class="fa fa-envelope"></i> tcantegrel@sierrawireless.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-twitter"></i> @sierradeveloper</a>
+            <a href="mailto:tcantegrel@sierrawireless.com"><i class="fa fa-envelope"></i> tcantegrel@sierrawireless.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/sierradeveloper" target="_blank"><i class="fa fa-twitter"></i> @sierradeveloper</a>
         </div>
         <div id="footer">
         	<img src="resources/img/sw_logo.png" />
