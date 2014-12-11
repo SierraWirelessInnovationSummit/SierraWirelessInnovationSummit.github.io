@@ -412,7 +412,16 @@ div#introduction {
 	100%{opacity:1;transform:translateY(0)}
 }
 
-div#introduction img {
+div#toptag {
+	width: 1vw;
+	height: 1vw;
+	background-color: #e53b30;
+	position: absolute;
+	top: 0;
+	right: 4%;
+}
+
+div#introduction img.logo {
 	position: absolute;
 	top: 10%;
 	left: 4%;
