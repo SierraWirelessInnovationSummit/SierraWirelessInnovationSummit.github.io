@@ -102,7 +102,7 @@ html, body {
 
 body {
 	font-family: 'l-lt', arial, sans;
-	color: rgb(139,139,139);
+	color: rgb(120,120,120);
 	text-rendering: optimizeLegibility;
 }
 
@@ -161,7 +161,7 @@ h2 {
 h3 {
 	font-weight: normal;
 	display: block;
-	font-size: 1.4vw;
+	font-size: 1.6vw;
 	color: rgb(39,39,39);
 	margin-bottom: 50px;
 }
@@ -188,7 +188,7 @@ p {
 	font-size: 18px; /*1024 display standard version*/
 }
 
-div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#contact, div#footer {
+div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#involve, div#contact, div#footer {
 	margin: 0 auto;
 	position: relative;
 	clear: both;
@@ -197,7 +197,7 @@ div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#contact, d
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
 	padding-bottom: 100px; /*1024 display standard version*/
-	font-size: 1.3vw;
+	font-size: 1.1vw;
 }
 
 .details {
@@ -264,24 +264,45 @@ div.bg {
 	color: rgb(139,139,139);
 	font-weight: normal;
 	font-size: 1vw;
+	text-align: center;
+	margin-bottom: 100px;
 }
 
-.container_third img {
-	width: 20%;
-	margin: 0 40%;
+.container_third img, .container_fifth img {
+	width: 40%;
+	margin: 0 20%;
 }
 
-.container_third h4, .container_fourth h4, .container_half h4 {
+.container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4 {
 	font-family: 'x-xlt', sans-serif;
 	color: rgb(39,39,39);
 	font-weight: normal;
 	display: block;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	letter-spacing: -1px;
 	text-align: center;
 }
 
-.container_third h4, .container_fourth h4 {
+.container_fourth h4.white {
+	font-family: 'x-xlt', sans-serif;
+	color: rgb(39,39,39);
+	font-weight: normal;
+	display: block;
+	font-size: 1.5vw;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.container_third h4 {
+	padding: 0px;
+	margin-top: -40px;
+}
+
+.container_third h4, .container_fifth h4 {
+	padding: 0px;
+}
+
+.container_fourth h4 {
 	padding: 12px 0px;
 }
 
@@ -310,11 +331,20 @@ div.bg {
 	float: left;
 	width: 20%;
 	margin-right: 6%;
-	color: rgb(139,139,139);
 	font-weight: normal;
 	font-size: 1vw;
 	text-align: center;
 	color: #fff;
+}
+
+.container_fifth {
+	float: left;
+	width: 16%;
+	margin-right: 5%;
+	color: rgb(139,139,139);
+	font-weight: normal;
+	font-size: 1vw;
+	text-align: center;
 }
 
 .container_fourth h4 {
@@ -364,7 +394,7 @@ div#introduction {
 	font-size: 2vw;
 }
 
-.animated {
+.animated1, .animated2 {
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-ms-animation-duration: 1s;
@@ -375,11 +405,6 @@ div#introduction {
 	-ms-animation-fill-mode: both;
 	-o-animation-fill-mode: both;
 	animation-fill-mode: both;
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-ms-animation-delay: 1s;
-	-o-animation-delay: 1s;
-	animation-delay: 1s;
 	-webkit-animation-name: animated;
 	-moz-animation-name: animated;
 	-ms-animation-name: animated;
@@ -387,8 +412,24 @@ div#introduction {
 	animation-name: animated;
 }
 
+.animated1 {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-ms-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.animated2 {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-ms-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
 @-webkit-keyframes animated{
-	0%{opacity:0;-webkit-transform:translateY(-30px)}
+	0%{opacity:0;-webkit-transform:translateY(-50px)}
 	100%{opacity:1;-webkit-transform:translateY(0)}
 }
 
@@ -492,12 +533,12 @@ div#information {
 	background-color: rgb(28,28,28);
 	height: 95px;
 	color: rgb(255,255,255);
-	font-size: 1vw;
+	font-size: 20px;
 }
 
 div#information .container {
-	margin: auto;
-	width: 1000px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 div#information .information_bucket {
@@ -510,13 +551,33 @@ div#information img {
 	float: left;
 	width: 64px;
 	margin-right: 25px;
+	margin-left: 150px;
+}
+
+div#information .leftBucket img {
+	float: right;
+	width: 64px;
+	margin-right: 150px;
+	margin-left: 25px;
+}
+
+div#information .leftBucket {
+	text-align: right;
 }
 
 div#information h4 {
 	color: #e53b30;
 	font-weight: normal;
 	display: block;
-	font-size: 1.5vw; /*1024 display standard version*/
+	font-size: 30px;
+	margin-top: -10px;
+}
+
+div#information h5 {
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: -3px;
+	margin-bottom: 10px;
 }
 
 .information_bucket a {
@@ -527,6 +588,20 @@ div#information h4 {
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
+
+.icalendar {
+	color: #888;
+	font-size: 15px;
+	background-color: #000;
+	padding: 2px 15px 3px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #000;
+}
+
 
 /******************
  *      TOP       *
@@ -571,7 +646,7 @@ nav a {
 	text-transform: uppercase;
 	font-size: 13px; /*1024 display standard version*/
 	padding: 9px 0px; /*1024 display standard version*/
-	margin-left: 100px;
+	margin-left: 60px;
 	border-bottom: 3px solid #e53b30;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -586,7 +661,7 @@ nav a:hover {
 
 nav a.link-selected {
 	padding: 9px 0px; /*1024 display standard version*/
-	margin-left: 100px;
+	margin-left: 60px;
 	border-bottom: 3px solid #FFF;
 }
 
@@ -622,6 +697,14 @@ nav a.link-selected {
 div#overview {
 	background-color: rgb(245,245,245);
 	height: 30vw;
+	line-height: 1.6vw;
+}
+
+div#overview iframe {
+	float: right;
+	width: 33%;
+	height: 50%;
+	margin-left: 100px;
 }
 
 /******************
@@ -644,7 +727,7 @@ div#numbers h2 {
  
 div#agenda {
 	background-color: rgb(245,245,245);
-	height: 120vw;
+	height: 60vw; /*120vw*/
 }
 
 div#agenda .agenda_element {
@@ -782,6 +865,16 @@ div#agenda .agenda_element_half h3 {
 	padding-bottom: 0.5vw;
 }
 
+div#agenda .agenda_element_half ul {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+div#agenda .agenda_element_half li {
+	list-style: circle;
+	color: #999;
+}
+
 div#agenda .agenda_element_half h4 {
 	font-family: 'l-lt', sans-serif;
 	font-size: 0.8vw;
@@ -881,7 +974,7 @@ div#register h3 {
 	padding-top: 1.5vw;
 }
 
-div#register a {
+div#register a, div#involve a {
 	color: #fff;
 	text-transform: uppercase;
 	padding: 1% 2%;
@@ -909,8 +1002,20 @@ div#register a {
  
 div#sponsor {
 	background-color: #fff;
-	height: 20vw;
+	height: 40vw;
 }
+
+
+/******************
+ *     INVOLVE    *
+ ******************/
+ 
+div#involve {
+	background-color: rgb(245,245,245);
+	height: 120vw;
+	text-align: center;
+}
+
 
 /******************
  *    LOCATION    *
