@@ -538,7 +538,7 @@ div#information {
 
 div#information .container {
 	margin: 0 auto;
-	width: 100%;
+	width: 1000px;
 }
 
 div#information .information_bucket {
@@ -551,10 +551,9 @@ div#information img {
 	float: left;
 	width: 64px;
 	margin-right: 25px;
-	margin-left: 150px;
 }
 
-div#information .leftBucket img {
+/*div#information .leftBucket img {
 	float: right;
 	width: 64px;
 	margin-right: 150px;
@@ -564,7 +563,7 @@ div#information .leftBucket img {
 div#information .leftBucket {
 	text-align: right;
 }
-
+*/
 div#information h4 {
 	color: #e53b30;
 	font-weight: normal;
@@ -727,7 +726,7 @@ div#numbers h2 {
  
 div#agenda {
 	background-color: rgb(245,245,245);
-	height: 60vw; /*120vw*/
+	height: 120vw;
 }
 
 div#agenda .agenda_element {
