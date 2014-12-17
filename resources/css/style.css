@@ -151,7 +151,7 @@ h2 {
 	color: rgb(229,59,48);
 	font-weight: normal;
 	position: relative;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	display: block;
 	font-size: 2.7vw;
 	text-align: center;
@@ -163,7 +163,9 @@ h3 {
 	display: block;
 	font-size: 1.6vw;
 	color: rgb(39,39,39);
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	display: block;
+	text-align: center;
 }
 
 div.bullet {
@@ -192,7 +194,7 @@ div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#involve, d
 	margin: 0 auto;
 	position: relative;
 	clear: both;
-	padding-top: 100px; /*1024 display standard version*/
+	padding-top: 115px; /*1024 display standard version*/
 	width: 92%; /*1024 display standard version*/
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
@@ -703,7 +705,8 @@ div#overview iframe {
 	float: right;
 	width: 33%;
 	height: 50%;
-	margin-left: 100px;
+	margin-left: 6%;
+	margin-bottom: 6%;
 }
 
 /******************
@@ -743,25 +746,32 @@ div#agenda .agenda_element_time, div#agenda .agenda_element_title, div#agenda .a
 }
 
 div#agenda .agenda_element_time {
-	width: 25%;
+	width: 9%;
+	padding-left: 1%;
 }
 
 div#agenda .agenda_element_title {
-	width: 50%;
+	width: 70%;
 	text-align: center;
 }
 
 div#agenda .agenda_element_speaker {
-	width: 25%;
+	width: 20%;
+}
+
+div#agenda .afternoon {
+	width: 90%;
 }
 
 div#agenda .agenda_element_time h3 {
 	font-family: 'x-lgt', sans-serif;
-	font-size: 1.1vw;
+	font-size: 1.0vw;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 0.5vw;
-	color: #bbb;
+	color: #666;
+	text-align: left;
+	margin-top: -10px;
 }
 
 div#agenda .agenda_element_time h4 {
@@ -783,23 +793,24 @@ div#agenda .agenda_element_title h3 {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 2vw;
+	padding-bottom: 1vw;
+	font-size: 1.4vw;
 }
 
 div#agenda .agenda_element_speaker img {
-	width: 3vw;
+	width: 2.5vw;
 	float: left;
 	margin: 0 1vw 1vw 1vw;
 }
 
 div#agenda .agenda_element_speaker h3 {
 	font-family: 'x-lgt', sans-serif;
-	font-size: 1.4vw;
+	font-size: 1.3vw;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	color: #e53b30;
-	
+	text-align: left;
 }
 
 div#agenda .agenda_element_speaker h4 {
@@ -953,6 +964,18 @@ div#agenda .agenda_element_half_speaker a {
 	margin-top: -1vw;
 }
 
+.break {
+	height: 4vw;
+	background-color: #fff;
+}
+
+.break h3 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0;
+	color: #999;
+}
 
 /******************
  *    REGISTER    *
