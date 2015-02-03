@@ -271,8 +271,7 @@ div.bg {
 }
 
 .container_third img, .container_fifth img {
-	width: 40%;
-	margin: 0 20%;
+	width: 60%;
 }
 
 .container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4 {
