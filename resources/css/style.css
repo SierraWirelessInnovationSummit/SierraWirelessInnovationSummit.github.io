@@ -274,11 +274,11 @@ div.bg {
 	width: 60%;
 }
 
- .container_sixth img {
+.container_sixth img, .container_seventh img {
 	width: 80%;
 }
 
-.container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4, , .container_sixth h4 {
+.container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4, .container_sixth h4, .container_seventh h4 {
 	font-family: 'x-xlt', sans-serif;
 	color: #111;
 	font-weight: normal;
@@ -305,7 +305,7 @@ div.bg {
 	margin-top: -40px;
 }
 
-.container_third h4, .container_fifth h4, , .container_sixth h4 {
+.container_third h4, .container_fifth h4, .container_sixth h4, .container_seventh h4 {
 	padding: 0px;
 }
 
@@ -357,6 +357,16 @@ div.bg {
 .container_sixth {
 	float: left;
 	width: 12%;
+	margin-right: 4%;
+	color: rgb(139,139,139);
+	font-weight: normal;
+	font-size: 1vw;
+	text-align: center;
+}
+
+.container_seventh {
+	float: left;
+	width: 10%;
 	margin-right: 4%;
 	color: rgb(139,139,139);
 	font-weight: normal;
