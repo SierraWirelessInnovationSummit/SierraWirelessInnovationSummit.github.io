@@ -274,11 +274,11 @@ div.bg {
 	width: 60%;
 }
 
-.container_sixth img, .container_seventh img {
+.container_sixth img {
 	width: 80%;
 }
 
-.container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4, .container_sixth h4, .container_seventh h4 {
+.container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4, .container_sixth h4, .container_eigth h4 {
 	font-family: 'x-xlt', sans-serif;
 	color: #111;
 	font-weight: normal;
@@ -305,7 +305,7 @@ div.bg {
 	margin-top: -40px;
 }
 
-.container_third h4, .container_fifth h4, .container_sixth h4, .container_seventh h4 {
+.container_third h4, .container_fifth h4, .container_sixth h4, .container_eigth h4 {
 	padding: 0px;
 }
 
@@ -344,6 +344,15 @@ div.bg {
 	color: #fff;
 }
 
+.container_eigth {
+	float: left;
+	width: 20%;
+	margin-right: 6%;
+	font-weight: normal;
+	font-size: 1vw;
+	text-align: center;
+}
+
 .container_fifth {
 	float: left;
 	width: 16%;
@@ -380,9 +389,18 @@ div.bg {
 	font-family: 'x-thn';
 }
 
+.container_eigth h4 {
+	margin-top: -50px;
+}
+  
 .container_fourth img {
 	width: 35%;
 	margin: 75px 32.5% 0 32.5%;
+}
+
+.container_eigth img {
+	width: 60%;
+	margin: 15px 20% 0 20%;
 }
 
 .container_half img.restore {
@@ -1069,7 +1087,7 @@ div#register a, div#involve a {
  
 div#sponsor {
 	background-color: #fff;
-	height: 45vw;
+	height: 60vw;
 }
 
 
