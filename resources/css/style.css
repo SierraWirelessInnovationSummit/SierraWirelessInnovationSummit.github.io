@@ -1013,7 +1013,7 @@ div#agenda .agenda_element_half_speaker h6 a {
 }
 
 div#agenda .agenda_element_half_speaker a {
-	font-size: 0.6vw;
+	font-size: 0.8vw;
 	margin: 0;
 	color: #444;
 	-webkit-transition: all 0.5s ease-in-out;
