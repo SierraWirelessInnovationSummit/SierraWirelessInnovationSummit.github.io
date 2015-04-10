@@ -780,7 +780,7 @@ div#numbers h2 {
  
 div#agenda {
 	background-color: rgb(245,245,245);
-	height: 156vw;
+	height: 200vw;
 }
 
 div#agenda .agenda_element {
@@ -979,7 +979,7 @@ div#agenda .agenda_element_half_speaker {
 }
 
 div#agenda .agenda_element_half_speaker img {
-	width: 2.5vw;
+	width: 2vw;
 	float: left;
 	margin: 0 1vw 2vw 1vw;
 }
@@ -998,7 +998,7 @@ div#agenda .agenda_element_half_speaker h6 {
 	font-weight: normal;
 	margin: 0;
 	color: #999;
-	padding-bottom: 0.5vw;
+	padding-bottom: 0.1vw;
 }
 
 div#agenda .agenda_element_half_speaker h6 a {
@@ -1014,7 +1014,6 @@ div#agenda .agenda_element_half_speaker h6 a {
 
 div#agenda .agenda_element_half_speaker a {
 	font-size: 0.6vw;
-	display: inline-block;
 	margin: 0;
 	color: #444;
 	-webkit-transition: all 0.5s ease-in-out;
