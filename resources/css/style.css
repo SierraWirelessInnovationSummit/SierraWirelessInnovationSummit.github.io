@@ -919,15 +919,22 @@ div#agenda .agenda_element_split {
 	height: 3vw;
 }
 
-div#agenda .agenda_element_half {
+div#agenda .agenda_element_half, div#agenda .agenda_element_third {
 	float: left;
-	width: 50%;
 	font-family: 'x-lgt', sans-serif;
 	font-size: 1.0vw;
 	color: #e53b30;
 }
 
-div#agenda .agenda_element_half h3 {
+div#agenda .agenda_element_half {
+	width: 50%;
+}
+
+div#agenda .agenda_element_third {
+	width: 33%;
+}
+
+div#agenda .agenda_element_half h3, div#agenda .agenda_element_third h3 {
 	font-family: 'l-lt', sans-serif;
 	font-size: 1.2vw;
 	color: #444;
@@ -937,17 +944,17 @@ div#agenda .agenda_element_half h3 {
 	padding-bottom: 0.5vw;
 }
 
-div#agenda .agenda_element_half ul {
+div#agenda .agenda_element_half ul, div#agenda .agenda_element_third ul {
 	display: inline-block;
 	margin-bottom: 15px;
 }
 
-div#agenda .agenda_element_half li {
+div#agenda .agenda_element_half li, div#agenda .agenda_element_third li {
 	list-style: circle;
 	color: #999;
 }
 
-div#agenda .agenda_element_half h4 {
+div#agenda .agenda_element_half h4, div#agenda .agenda_element_third h4 {
 	font-family: 'l-lt', sans-serif;
 	font-size: 0.8vw;
 	color: #999;
@@ -966,25 +973,25 @@ div#agenda .agenda_element_half h4 {
 	margin-bottom: 0.8vw;
 }
 
-div#agenda .agenda_element_half h4.fake {
+div#agenda .agenda_element_half h4.fake, div#agenda .agenda_element_third h4.fake {
 	color: rgb(245,245,245);
 	background-color: transparent;
 }
 
-div#agenda .agenda_element_half_speaker {
+div#agenda .agenda_element_half_speaker, div#agenda .agenda_element_third_speaker {
 	position: relative;
 	text-align: left;
 	border-top: 1px dashed #ddd;
 	padding-top: 0.8vw;
 }
 
-div#agenda .agenda_element_half_speaker img {
+div#agenda .agenda_element_half_speaker img, div#agenda .agenda_element_third_speaker img {
 	width: 2vw;
 	float: left;
 	margin: 0 1vw 2vw 1vw;
 }
 
-div#agenda .agenda_element_half_speaker h5 {
+div#agenda .agenda_element_half_speaker h5, , div#agenda .agenda_element_third_speaker h5 {
 	font-family: 'x-lgt', sans-serif;
 	font-size: 1.2vw;
 	font-weight: normal;
@@ -993,7 +1000,7 @@ div#agenda .agenda_element_half_speaker h5 {
 	color: #e53b30;
 }
 
-div#agenda .agenda_element_half_speaker h6 {
+div#agenda .agenda_element_half_speaker h6, div#agenda .agenda_element_third_speaker h6 {
 	font-size: 0.8vw;
 	font-weight: normal;
 	margin: 0;
@@ -1001,7 +1008,7 @@ div#agenda .agenda_element_half_speaker h6 {
 	padding-bottom: 0.1vw;
 }
 
-div#agenda .agenda_element_half_speaker h6 a {
+div#agenda .agenda_element_half_speaker h6 a, div#agenda .agenda_element_third_speaker h6 {
 	font-size: 0.8vw;
 	font-weight: normal;
 	color: #444;
@@ -1012,7 +1019,7 @@ div#agenda .agenda_element_half_speaker h6 a {
     transition: all 0.5s ease-in-out;
 }
 
-div#agenda .agenda_element_half_speaker a {
+div#agenda .agenda_element_half_speaker a, div#agenda .agenda_element_third_speaker a {
 	font-size: 0.8vw;
 	margin: 0;
 	color: #444;
