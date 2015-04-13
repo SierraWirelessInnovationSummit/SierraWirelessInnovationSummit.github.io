@@ -780,7 +780,7 @@ div#numbers h2 {
  
 div#agenda {
 	background-color: rgb(245,245,245);
-	height: 200vw;
+	height: 215vw;
 }
 
 div#agenda .agenda_element {
@@ -818,7 +818,7 @@ div#agenda .agenda_element_title h3.morning {
 }
 
 div#agenda .afternoon {
-	width: 82%;
+	width: 90%;
 }
 
 div#agenda .agenda_element_time h4 {
@@ -916,7 +916,7 @@ div#agenda .agenda_element_split {
 	position: relative;
 	clear: both;
 	background-color: rgba(255,255,255,0.5);
-	height: 3vw;
+	height: 7vw;
 }
 
 div#agenda .agenda_element_half, div#agenda .agenda_element_third {
@@ -932,6 +932,14 @@ div#agenda .agenda_element_half {
 
 div#agenda .agenda_element_third {
 	width: 33%;
+}
+
+div#agenda .agenda_element_third div.text {
+	font-family: 'l-lt', sans-serif;
+	text-align: left;
+	font-size: 0.8vw;
+	margin: 10px;
+	color: #999;
 }
 
 div#agenda .agenda_element_half h3, div#agenda .agenda_element_third h3 {
