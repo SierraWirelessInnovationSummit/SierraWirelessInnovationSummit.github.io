@@ -190,7 +190,7 @@ p {
 	font-size: 18px; /*1024 display standard version*/
 }
 
-div#overview, div#numbers, div#agenda, div#register, div#sponsor, div#involve, div#contact, div#footer {
+div#overview, div#numbers, div#agenda, div#speakers, div#register, div#sponsor, div#involve, div#contact, div#footer {
 	margin: 0 auto;
 	position: relative;
 	clear: both;
@@ -1008,6 +1008,10 @@ div#agenda .agenda_element_half_speaker h5, , div#agenda .agenda_element_third_s
 	color: #e53b30;
 }
 
+div#agenda .agenda_element_half_speaker h5 a {
+	color: #e53b30;
+}
+
 div#agenda .agenda_element_half_speaker h6, div#agenda .agenda_element_third_speaker h6 {
 	font-size: 0.8vw;
 	font-weight: normal;
@@ -1052,6 +1056,87 @@ div#agenda .break h3 {
 	padding-bottom: 0;
 	color: #999;
 	font-size: 1.2vw;
+}
+
+
+/******************
+ *    SPEAKERS    *
+ ******************/
+ 
+div#speakers {
+	background-color: #fff;
+	height: 70vw;
+}
+
+div#speakers div.speaker_bucket {
+	clear: left;
+	position: relative;
+	color: #444;
+	line-height: 30px;
+	padding-top: 150px;
+}
+
+div#speakers div.speakerLeft {
+	float: left;
+	margin-right: 3vw;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+div#speakers h3 {
+	color: #E53B30;
+	text-align: left;
+	font-size: 2vw;
+	margin-bottom: 0.5vw;
+}
+
+div#speakers h4 {
+	color: #999;
+	text-align: left;
+	font-size: 1vw;
+	margin-bottom: 1vw;
+}
+
+div#speakers div.socials {
+	position: absolute;
+	top: 150px;
+	right: 0;
+	font-size: 0.6vw;
+}
+
+div#speakers div.socials a {
+	color: #CCC;
+	font-size: 1.0vw;
+	padding-left: 2vw;
+}
+
+div#speakers div.socials a:hover {
+	color: #e53b30;
+}
+
+div#speakers div.speech {
+	text-align: left;
+	background-color: #FAFAFA;
+	padding: 25px 25px 25px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin-left: 15vw;
+	font-size: 1vw;
+}
+
+div#speakers div.speech h5 {
+	color: #444;
+	font-size: 1.2vw;
+}
+
+div#speakers div.speech h6 {
+	color: #666;
+	margin: 0;
+	padding-left: 2.6vw;
+	margin-bottom: 1vw;
 }
 
 /******************
