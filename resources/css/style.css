@@ -1065,7 +1065,7 @@ div#agenda .break h3 {
  
 div#speakers {
 	background-color: #fff;
-	height: 70vw;
+	height: 150vw;
 }
 
 div#speakers div.speaker_bucket {
@@ -1094,6 +1094,16 @@ div#speakers h4 {
 	color: #999;
 	text-align: left;
 	font-size: 1vw;
+}
+
+div#speakers h5 {
+	margin-bottom: 1vw;
+}
+
+div#speakers h5 a {
+	color: #444;
+	text-align: left;
+	font-size: 0.8vw;
 	margin-bottom: 1vw;
 }
 
@@ -1130,6 +1140,7 @@ div#speakers div.speech {
 div#speakers div.speech h5 {
 	color: #444;
 	font-size: 1.2vw;
+	margin-bottom: 0;
 }
 
 div#speakers div.speech h6 {
