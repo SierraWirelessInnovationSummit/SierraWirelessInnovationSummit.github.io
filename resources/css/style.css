@@ -780,7 +780,6 @@ div#numbers h2 {
  
 div#agenda {
 	background-color: rgb(245,245,245);
-	height: 215vw;
 }
 
 div#agenda .agenda_element {
@@ -1008,8 +1007,9 @@ div#agenda .agenda_element_half_speaker h5, , div#agenda .agenda_element_third_s
 	color: #e53b30;
 }
 
-div#agenda .agenda_element_half_speaker h5 a {
+div#agenda .agenda_element_half_speaker h5, div#agenda .agenda_element_half_speaker h5 a {
 	color: #e53b30;
+	font-family: 'l-lt';
 }
 
 div#agenda .agenda_element_half_speaker h6, div#agenda .agenda_element_third_speaker h6 {
@@ -1018,6 +1018,7 @@ div#agenda .agenda_element_half_speaker h6, div#agenda .agenda_element_third_spe
 	margin: 0;
 	color: #999;
 	padding-bottom: 0.1vw;
+	font-family: 'l-lt';
 }
 
 div#agenda .agenda_element_half_speaker h6 a, div#agenda .agenda_element_third_speaker h6 {
@@ -1042,6 +1043,7 @@ div#agenda .agenda_element_half_speaker a, div#agenda .agenda_element_third_spea
 	transition: all 0.5s ease-in-out;
 	margin-bottom: 1vw;
 	margin-top: -1vw;
+	font-family: 'l-lt';
 }
 
 .break {
