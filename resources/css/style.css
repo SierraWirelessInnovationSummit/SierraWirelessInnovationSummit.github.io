@@ -1198,7 +1198,10 @@ div#register a, div#involve a {
  
 div#sponsor {
 	background-color: #fff;
-	height: 60vw;
+}
+
+div#sponsor h3 {
+	color: #e53b30;
 }
 
 
