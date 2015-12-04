@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
-
 /*******************
  *     GLOBAL     *
  *******************/
@@ -10,16 +8,106 @@ html, body {
     height: 100%;
 }
 
+@font-face {
+    font-family: 'xcnd-lgt';
+    src: url('../fonts/xcnd-lgt.eot');
+    src: url('../fonts/xcnd-lgt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/xcnd-lgt.woff') format('woff'),
+		 url('../fonts/xcnd-lgt.woff2') format('woff2'),
+         url('../fonts/xcnd-lgt.ttf') format('truetype'),
+         url('../fonts/xcnd-lgt.svg#xcnd-lgt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-lgt';
+    src: url('../fonts/x-lgt.eot');
+    src: url('../fonts/x-lgt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-lgt.woff') format('woff'),
+		 url('../fonts/x-lgt.woff2') format('woff2'),
+         url('../fonts/x-lgt.ttf') format('truetype'),
+         url('../fonts/x-lgt.svg#x-lgt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-xlt';
+    src: url('../fonts/x-xlt.eot');
+    src: url('../fonts/x-xlt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-xlt.woff') format('woff'),
+		 url('../fonts/x-xlt.woff2') format('woff2'),
+         url('../fonts/x-xlt.ttf') format('truetype'),
+         url('../fonts/x-xlt.svg#x-xlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-thn';
+    src: url('../fonts/x-thn.eot');
+    src: url('../fonts/x-thn.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/x-thn.woff') format('woff'),
+		 url('../fonts/x-thn.woff2') format('woff2'),
+         url('../fonts/x-thn.ttf') format('truetype'),
+         url('../fonts/x-thn.svg#x-thn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-lt';
+    src: url('../fonts/l-lt.eot');
+    src: url('../fonts/l-lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-lt.woff') format('woff'),
+         url('../fonts/l-lt.ttf') format('truetype'),
+         url('../fonts/l-lt.svg#l-lt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-rg';
+    src: url('../fonts/l-rg.eot');
+    src: url('../fonts/l-rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-rg.woff') format('woff'),
+         url('../fonts/l-rg.ttf') format('truetype'),
+         url('../fonts/l-rg.svg#l-rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'l-hl';
+    src: url('../fonts/l-hl.eot');
+    src: url('../fonts/l-hl.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l-hl.woff') format('woff'),
+         url('../fonts/l-hl.ttf') format('truetype'),
+         url('../fonts/l-hl.svg#l-hl') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'swop_icons';
+    src: url('../fonts/swop_icons.eot');
+    src: url('../fonts/swop_icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/swop_icons.woff') format('woff'),
+         url('../fonts/swop_icons.ttf') format('truetype'),
+         url('../fonts/swop_icons.svg#swop_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
-	color: #666;
+	font-family: 'l-lt', arial, sans;
+	color: rgb(120,120,120);
 	text-rendering: optimizeLegibility;
 }
 
 a {
     text-decoration: none;
-	border-bottom: 1px dashed #00677a;
     outline: none;
     position: relative;
     z-index: 1;
@@ -28,7 +116,6 @@ a {
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-	color: #00677a;
 }
 
 a img {
@@ -56,22 +143,23 @@ div.wrapper {
 
 .red {
 	color: rgb(229,59,48);
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-family: 'l-rg', arial, sans;
 }
 
 h2 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200;
+	font-family: 'x-xlt', sans-serif;
+	color: rgb(229,59,48);
+	font-weight: normal;
 	position: relative;
 	padding-bottom: 20px;
 	display: block;
 	font-size: 2.7vw;
-	color: #000;
+	text-align: center;
 }
 
 
 h3 {
+	font-weight: normal;
 	display: block;
 	font-size: 1.6vw;
 	color: rgb(39,39,39);
@@ -150,7 +238,7 @@ div.bg {
     width: 100%;
     background: url('../img/bg.jpg') center center no-repeat #000;
     background-size: cover;
-	/*border-top: 3px solid rgb(229,59,48);*/
+	border-top: 3px solid rgb(229,59,48);
 }
 
 .container_half {
@@ -191,9 +279,9 @@ div.bg {
 }
 
 .container_third h4, .container_fourth h4, .container_half h4, .container_fifth h4, .container_sixth h4, .container_eigth h4 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200;
+	font-family: 'x-xlt', sans-serif;
 	color: #111;
+	font-weight: normal;
 	display: block;
 	font-size: 1.5vw;
 	letter-spacing: -1px;
@@ -201,9 +289,9 @@ div.bg {
 }
 
 .container_fourth h4.white {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200;
+	font-family: 'x-xlt', sans-serif;
 	color: rgb(39,39,39);
+	font-weight: normal;
 	display: block;
 	font-size: 1.5vw;
 	letter-spacing: -1px;
@@ -222,8 +310,7 @@ div.bg {
 }
 
 .container_fourth h4 {
-	padding: 12px 0px 0px 0px;
-	margin-bottom: -10px;
+	padding: 12px 0px;
 }
 
 .container_half h4 {
@@ -251,6 +338,7 @@ div.bg {
 	float: left;
 	width: 20%;
 	margin-right: 6%;
+	font-weight: normal;
 	font-size: 1vw;
 	text-align: center;
 	color: #fff;
@@ -298,6 +386,7 @@ div.bg {
 .container_fourth h4 {
 	color: #fff;
 	font-size: 3vw;
+	font-family: 'x-thn';
 }
 
 .container_eigth h4 {
@@ -340,14 +429,14 @@ div#introduction {
 	margin: auto;
 	position: relative;
 	clear: both;
-	padding-top: 7vw; /*1024 display standard version*/
+	padding-top: 9vw; /*1024 display standard version*/
 	width: 92%; /*1024 display standard version*/
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
-	height: 23vw;
+	height: 21vw;
 	text-align: center;
 	color: #FFF;
-	font-size: 1.7vw;
+	font-size: 2vw;
 }
 
 .animated1, .animated2 {
@@ -382,7 +471,6 @@ div#introduction {
 	-ms-animation-delay: 2s;
 	-o-animation-delay: 2s;
 	animation-delay: 2s;
-	line-height: 1vw;
 }
 
 @-webkit-keyframes animated{
@@ -411,7 +499,6 @@ div#introduction {
 }
 
 a.toptag {
-	display: none;
 	width: 2.5vw;
 	height: 2.5vw;
 	background-color: #e53b30;
@@ -434,9 +521,9 @@ div#introduction img.logo {
 }
 
 div#introduction h1 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 400;
+	font-family: 'l-rg', sans-serif;
 	color: #e53b30;
+	font-weight: normal;
 	display: block;
 	font-size: 1.5vw; /*1024 display standard version*/
 	text-transform: uppercase;
@@ -444,13 +531,13 @@ div#introduction h1 {
 }
 
 div#introduction h2 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200;
+	font-family: 'x-xlt', sans-serif;
 	color: rgb(255,255,255);
-	padding-bottom: 0px;
+	font-weight: normal;
+	padding-bottom: 12px;
 	display: block;
 	font-size: 5vw; /*1024 display standard version*/
-	margin-top: -2vw;
+	margin-top: -1vw;
 	letter-spacing: -0.2vw;
 }
 
@@ -470,8 +557,7 @@ div#introduction a.actionbutton {
 	border: 1px solid #e53b30;
 	font-size: 1vw;
 	margin-top: 1vw;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-family: 'l-rg', sans-serif;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -497,7 +583,7 @@ div#information {
 	width: 92%; /*1024 display standard version*/
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
-	background-color: #e53b30;
+	background-color: rgb(28,28,28);
 	height: 95px;
 	color: rgb(255,255,255);
 	font-size: 20px;
@@ -532,20 +618,18 @@ div#information .leftBucket {
 }
 */
 div#information h4 {
-	color: #fff;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	color: #e53b30;
+	font-weight: normal;
 	display: block;
 	font-size: 30px;
-	margin-top: -20px;
+	margin-top: -10px;
 }
 
 div#information h5 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-weight: normal;
 	font-size: 20px;
-	margin-top: -10px;
-	margin-bottom: 5px;
+	margin-top: -3px;
+	margin-bottom: 10px;
 }
 
 .information_bucket a {
@@ -581,8 +665,8 @@ div#information h5 {
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
-	background: #FFF;
-	height: 100px; /*1024 display standard version*/
+	background: rgb(229,59,48);
+	height: 65px; /*1024 display standard version*/
 }
 
 header {
@@ -595,28 +679,27 @@ header h1 a {
     position: absolute;
     left: 0px;
 	text-indent: -9000px;
-	top: 32px;
-    width: 200px;
-    height: 51px;
-    background: url("../img/sw_logo_color.png") no-repeat 0px -79px;
-    background-size: 200px;
-    border-bottom: none;
+	top: 18px;
+	width: 50px;
+	height: 51px;
+	background: url("../img/sw_logo.png") no-repeat 0px 0px;
+	background-size: 150px;
 }
 
 nav {
     position: absolute;
     right: 0px;
-	top: 36px; /*1024 display standard version*/
+	top: 23px; /*1024 display standard version*/
 }
 
 nav a {
 	text-transform: uppercase;
-	color: #666;
+	color: rgb(255,255,255);
 	text-transform: uppercase;
-	font-size: 16px;
-	padding: 9px 0px;
+	font-size: 13px; /*1024 display standard version*/
+	padding: 9px 0px; /*1024 display standard version*/
 	margin-left: 60px;
-	border-bottom: 3px solid #FFF;
+	border-bottom: 3px solid #e53b30;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -625,7 +708,7 @@ nav a {
 }
 
 nav a:hover {
-	border-bottom: 3px solid #666;
+	border-bottom: 3px solid #fff;
 }
 
 nav a.link-selected {
@@ -1162,10 +1245,6 @@ div#contact {
 	padding-top: 35px;
 }
 
-div#contact h2 {
-	color: #666;
-}
-
 div#contact img {
 	float: left;
 	margin: 0 3vw 2vw 0;
@@ -1173,34 +1252,31 @@ div#contact img {
 }
 
 div#contact h5 {
+	font-family: 'l-lt', sans-serif;
+	font-weight: normal;
 	font-size: 2vw;
 	margin: 0;
 	padding: 0;
-	font-weight: 300;
-	margin-bottom: -10px;
 }
 
 div#contact h6 {
+	font-family: 'l-lt', sans-serif;
+	font-weight: normal;
 	font-size: 1.5vw;
 	margin: 0;
 	padding: 0;
 	color: #ccc;
-	padding-bottom: 15px;
-	font-weight: 300;
+	padding-bottom: 25px;
 }
 
 div#contact h6 a {
 	color: #e53b30;
-	font-family: 'Titillium Web', sans-serif;
-	border-bottom: none;
-	font-weight: 300;
+	font-family: 'l-lt', sans-serif;
 }
 
 div#contact a {
 	color: #888;
-	font-family: 'Titillium Web', sans-serif;
-	border-bottom: none;
-	font-weight: 300;
+	font-family: 'l-rg', sans-serif;
 }
 
 div#contact a:hover {
