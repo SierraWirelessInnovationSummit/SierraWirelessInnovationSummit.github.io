@@ -436,11 +436,11 @@ div#introduction {
 	margin: auto;
 	position: relative;
 	clear: both;
-	padding-top: 8vw; /*1024 display standard version*/
+	padding-top: 6vw; /*1024 display standard version*/
 	width: 92%; /*1024 display standard version*/
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
-	height: 22vw;
+	height: 24vw;
 	text-align: center;
 	color: #FFF;
 	font-size: 1.7vw;
@@ -531,13 +531,11 @@ div#introduction img.logo {
 }
 
 div#introduction h1 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 400;
+	font-family: 'arln_sb', sans-serif;
 	color: #e53b30;
 	display: block;
 	font-size: 1.5vw; /*1024 display standard version*/
 	text-transform: uppercase;
-	letter-spacing: 0.2vw;
 }
 
 div#introduction h2 {
@@ -549,6 +547,24 @@ div#introduction h2 {
 	font-size: 5vw; /*1024 display standard version*/
 	margin-top: -2vw;
 	letter-spacing: -0.2vw;
+}
+
+div#introduction sup.oofiot {
+	font-size: 48px;
+}
+
+div#introduction span.iot {
+	margin-left: -27px;
+}
+
+div#introduction h3 {
+	font-family: 'arln_bd', helvetica, sans-serif;
+	color: rgb(255,255,255);
+	padding-bottom: 0px;
+	display: block;
+	font-size: 36px;
+	margin-top: -2.5vw;
+	margin-bottom: 30px;
 }
 
 div#introduction a.actionbutton {
