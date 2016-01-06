@@ -207,7 +207,7 @@ div#overview, div#numbers, div#speakers, div#register, div#sponsor, div#involve,
 	padding-left: 4%; /*1024 display standard version*/
 	padding-right: 4%; /*1024 display standard version*/
 	padding-bottom: 100px; /*1024 display standard version*/
-	font-size: 1.1vw;
+	font-size: 18px;
 }
 
 .details {
@@ -531,11 +531,12 @@ div#introduction img.logo {
 }
 
 div#introduction h1 {
-	font-family: 'arln_sb', sans-serif;
+	font-family: 'arln_rg', sans-serif;
 	color: #e53b30;
 	display: block;
 	font-size: 1.5vw; /*1024 display standard version*/
 	text-transform: uppercase;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 div#introduction h2 {
@@ -547,6 +548,7 @@ div#introduction h2 {
 	font-size: 5vw; /*1024 display standard version*/
 	margin-top: -2vw;
 	letter-spacing: -0.2vw;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 div#introduction sup.oofiot {
@@ -565,6 +567,7 @@ div#introduction h3 {
 	font-size: 36px;
 	margin-top: -2.5vw;
 	margin-bottom: 30px;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 div#introduction a.actionbutton {
@@ -646,19 +649,19 @@ div#information .leftBucket {
 */
 div#information h4 {
 	color: #fff;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-family: 'alrn_sb', helvetica, sans-serif;
+	font-weight: normal;
 	display: block;
-	font-size: 30px;
-	margin-top: -20px;
+	font-size: 24px;
+	margin-top: -10px;
 }
 
 div#information h5 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-family: 'alrn_lt', helvetica, sans-serif;
+	font-weight: normal;
 	font-size: 20px;
-	margin-top: -10px;
 	margin-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .information_bucket a {
@@ -681,6 +684,17 @@ div#information h5 {
 	-o-border-radius: 10px;
 	border-radius: 10px;
 	border: 1px solid #000;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.icalendar:hover {
+	color: #e53b30;
+	background-color: #FFF;
+	border: 1px solid #FFF;
 }
 
 
@@ -827,7 +841,7 @@ div#agenda .agenda-half {
 	width: 42%;
 	position: relative;
 	float: left;
-	padding: 4%;
+	padding: 0px 4%;
 	color: rgba(255,255,255,0.75);
 }
 
@@ -866,17 +880,18 @@ div#agenda .agenda-half h4 {
 div#agenda .agenda-half h5 {
 	padding: 0;
 	margin: 0;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
 	font-family: 'alrn_lt', helvetica, sans-serif;
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 24px;
 	clear: left;
 	color: rgba(255,255,255,1.0);
 }
 
 div#agenda .agenda-content {
-	width: 20%;
+	width: 45%;
 	position: relative;
 	float: left;
 	color: rgba(255,255,255,0.6);
@@ -886,9 +901,43 @@ div#agenda .agenda-content {
 }
 
 div#agenda .agenda-content img {
-	width: 50%;
-	margin-top: 20px;
+	float: left;
+	width: 40%;
+	margin-right: 20px;
 	margin-bottom: 25px;
+}
+
+div#agenda .agenda-content h6 {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: 'alrn_bd', helvetica, sans-serif;
+	font-size: 20px;
+	color: rgba(255,255,255,1.0);
+}
+
+div#agenda .agenda-content h6.red {
+	color: #e53b30;
+}
+
+div#agenda .agenda-content h6.purple {
+	color: #863bbf;
+}
+
+div#agenda .agenda-content h6.fresh {
+	color: #1cbbb4;
+}
+
+div#agenda .agenda-content h6.sky {
+	color: #00adef;
+}
+
+div#agenda .agenda-content h6.yellow {
+	color: #ffd000;
+}
+
+div#agenda .agenda-content h6.navy {
+	color: #0160cd;
 }
 
 div#agenda .agenda-half a, div#agenda .agenda-content a {
