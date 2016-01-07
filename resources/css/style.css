@@ -1052,11 +1052,12 @@ div#register {
 
 div#register h3 {
 	color: #fff;
-	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 2.5vw;
 	padding-top: 1.5vw;
+	font-family: 'alrn_rg', helvetica, sans-serif;
+	font-weight: normal;
 }
 
 div#register a, div#involve a {
