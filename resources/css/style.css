@@ -1111,7 +1111,7 @@ div#map {
 	margin: 0 auto;
 	position: relative;
 	clear: both;
-	padding-top: 65px;
+	padding-top: 102px;
 	width: 100%;
 	background-color: rgb(245,245,245);
 }
@@ -1143,16 +1143,25 @@ div#contact img {
 	width: 10vw;
 }
 
-div#contact h5 {
-	font-size: 2vw;
+div.actor {
+	position: relative;
+	float: left;
+	width: 45%;
+	padding-right: 5%;
+	font-size: 18px;
+	color: rgba(255,255,255,0.65);
+}
+
+div.actor h5 {
+	font-size: 24px;
 	margin: 0;
 	padding: 0;
 	font-weight: 300;
-	margin-bottom: -10px;
+	color: rgba(255,255,255,1.0);
 }
 
-div#contact h6 {
-	font-size: 1.5vw;
+div.actor h6 {
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
 	color: #ccc;
@@ -1160,22 +1169,19 @@ div#contact h6 {
 	font-weight: 300;
 }
 
-div#contact h6 a {
+div.actor h6 a {
 	color: #e53b30;
-	font-family: 'Titillium Web', sans-serif;
 	border-bottom: none;
-	font-weight: 300;
+	font-size: 18px;
 }
 
-div#contact a {
+div.actor a {
 	color: #888;
-	font-family: 'Titillium Web', sans-serif;
 	border-bottom: none;
-	font-weight: 300;
 }
 
-div#contact a:hover {
-	color: #e53b30;
+div.actor h6 a:hover, div#contact a:hover {
+	color: #fff;
 }
 
 /******************
