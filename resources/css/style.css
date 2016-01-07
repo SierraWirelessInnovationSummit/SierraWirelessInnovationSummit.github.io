@@ -443,7 +443,7 @@ div#introduction {
 	height: 24vw;
 	text-align: center;
 	color: #FFF;
-	font-size: 1.7vw;
+	font-size: 24px;
 	background: url('../img/introduction_bg.png') bottom center repeat-x;
 }
 
@@ -810,7 +810,7 @@ div#overview iframe {
 div#numbers {
 	background: url('../img/btn.jpg') center center no-repeat #000;
     background-size: 1920px 700px;
-	height: 20vw;
+	height: 12vw;
 }
 
 div#numbers h2 {
@@ -898,6 +898,7 @@ div#agenda .agenda-content {
 	font-size: 15px;
 	padding-right: 5%;
 	line-height: 18px;
+	padding-bottom: 25px;
 }
 
 div#agenda .agenda-content img {
@@ -1099,7 +1100,6 @@ div#sponsor h3 {
  
 div#involve {
 	background-color: rgb(245,245,245);
-	height: 37vw;
 }
 
 
@@ -1130,7 +1130,6 @@ div#location {
 div#contact {
 	background-color: rgb(28,28,28);
 	color: rgb(255,255,255);
-	height: 40vw;
 	padding-top: 35px;
 }
 
