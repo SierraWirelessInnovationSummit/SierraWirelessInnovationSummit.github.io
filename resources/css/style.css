@@ -941,6 +941,10 @@ div#agenda .agenda-content h6.navy {
 	color: #0160cd;
 }
 
+div#agenda .agenda-content h6.gold {
+	color: #d6af00;
+}
+
 div#agenda .agenda-half a, div#agenda .agenda-content a {
 	color: rgba(255,255,255,0.9);
 	border-bottom: 1px dashed rgba(255,255,255,0.9);
