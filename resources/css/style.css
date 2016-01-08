@@ -106,8 +106,9 @@ html, body {
 }
 
 body {
-	font-family: 'alrn-lgt', sans-serif;
-	font-weight: 300;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	color: #666;
 	text-rendering: optimizeLegibility;
 }
@@ -149,19 +150,13 @@ div.wrapper {
     z-index: 1;
 }
 
-.red {
-	color: rgb(229,59,48);
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
-}
-
 h2 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 200;
 	position: relative;
 	padding-bottom: 40px;
 	display: block;
-	font-size: 2.7vw;
+	font-size: 48px;
 	color: #000;
 	text-align: center;
 }
@@ -208,6 +203,7 @@ div#overview, div#numbers, div#speakers, div#register, div#sponsor, div#involve,
 	padding-right: 4%; /*1024 display standard version*/
 	padding-bottom: 100px; /*1024 display standard version*/
 	font-size: 18px;
+	line-height: 24px;
 }
 
 .details {
@@ -443,7 +439,7 @@ div#introduction {
 	height: 24vw;
 	text-align: center;
 	color: #FFF;
-	font-size: 24px;
+	font-size: 30px;
 	background: url('../img/introduction_bg.png') bottom center repeat-x;
 }
 
@@ -530,11 +526,12 @@ div#introduction img.logo {
 }
 
 div#introduction h1 {
-	font-family: 'arln_rg', sans-serif;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 400;*/
 	color: #e53b30;
 	display: block;
-	font-size: 1.5vw; /*1024 display standard version*/
-	text-transform: uppercase;
+	font-size: 36px;
 	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -544,9 +541,8 @@ div#introduction h2 {
 	color: rgb(255,255,255);
 	padding-bottom: 0px;
 	display: block;
-	font-size: 5vw; /*1024 display standard version*/
+	font-size: 88px; /*1024 display standard version*/
 	margin-top: -2vw;
-	letter-spacing: -0.2vw;
 	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -559,13 +555,15 @@ div#introduction span.iot {
 }
 
 div#introduction h3 {
-	font-family: 'arln_bd', helvetica, sans-serif;
+	font-family: 'alrn_bd', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	color: rgb(255,255,255);
 	padding-bottom: 0px;
 	display: block;
 	font-size: 36px;
-	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-top: -16px;
+	margin-bottom: 15px;
 	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -583,10 +581,11 @@ div#introduction a.actionbutton {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	border: 1px solid #FFF;
-	font-size: 1vw;
+	font-size: 18px;
 	margin-top: 1vw;
-	font-family: 'alrn-lgt', sans-serif;
-	font-weight: 300;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -648,15 +647,18 @@ div#information .leftBucket {
 */
 div#information h4 {
 	color: #fff;
-	font-family: 'alrn_sb', helvetica, sans-serif;
-	font-weight: normal;
+	font-family: 'alrn_sb', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 400;*/
 	display: block;
 	font-size: 24px;
 	margin-top: -10px;
 }
 
 div#information h5 {
-	font-family: 'alrn_lt', helvetica, sans-serif;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	font-weight: normal;
 	font-size: 20px;
 	margin-bottom: 5px;
@@ -791,7 +793,6 @@ nav a.link-selected {
  
 div#overview {
 	background-color: rgb(245,245,245);
-	line-height: 1.6vw;
 }
 
 div#overview iframe {
@@ -828,7 +829,7 @@ div#agenda {
 	padding-top: 175px;
 	width: 100%;
 	padding-bottom: 100px;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 div#agenda h2 {
@@ -845,7 +846,9 @@ div#agenda .agenda-half {
 }
 
 span.agenda-day {
-	font-family: 'alrn_bd', helvetica, sans-serif;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	display: block;
 	padding-bottom: 35px;
 	font-size: 20px;
@@ -861,7 +864,7 @@ div#agenda .agenda-half h3 {
 	margin: 0;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 300;
-	font-size: 48px;
+	font-size: 64px;
 	color: #e53b30;
 }
 
@@ -870,7 +873,9 @@ div#agenda .agenda-half h4 {
 	padding: 0;
 	margin: 0;
 	padding-bottom: 40px;
-	font-family: 'alrn_ul', helvetica, sans-serif;
+	font-family: 'alrn_ul', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	font-size: 24px;
 	letter-spacing: 2px;
 	color: rgba(255,255,255,1.0);
@@ -882,9 +887,11 @@ div#agenda .agenda-half h5 {
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 30px;
-	font-family: 'alrn_lt', helvetica, sans-serif;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	letter-spacing: 1px;
-	font-size: 24px;
+	font-size: 32px;
 	clear: left;
 	color: rgba(255,255,255,1.0);
 }
@@ -894,25 +901,25 @@ div#agenda .agenda-content {
 	position: relative;
 	float: left;
 	color: rgba(255,255,255,0.6);
-	font-size: 15px;
+	font-size: 20px;
 	padding-right: 5%;
-	line-height: 18px;
 	padding-bottom: 25px;
 }
 
 div#agenda .agenda-content img {
 	float: left;
-	width: 40%;
-	margin-right: 20px;
-	margin-bottom: 25px;
+	width: 20%;
+	margin-right: 40px;
 }
 
 div#agenda .agenda-content h6 {
 	padding: 0;
 	margin: 0;
 	padding-bottom: 10px;
-	font-family: 'alrn_bd', helvetica, sans-serif;
-	font-size: 20px;
+	font-family: 'alrn_bd', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
+	font-size: 28px;
 	color: rgba(255,255,255,1.0);
 }
 
@@ -1059,7 +1066,9 @@ div#register h3 {
 	padding: 0;
 	padding-bottom: 2.5vw;
 	padding-top: 1.5vw;
-	font-family: 'alrn_rg', helvetica, sans-serif;
+	font-family: 'alrn_rg', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	font-weight: normal;
 }
 
@@ -1076,8 +1085,10 @@ div#register a, div#involve a {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	border: 1px solid #e53b30;
-	font-size: 1vw;
-	font-family: 'l-rg', sans-serif;
+	font-size: 18px;
+	font-family: 'alrn_lt', sans-serif;
+	/*font-family: 'Titillium', sans-serif;
+	font-weight: 300;*/
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
