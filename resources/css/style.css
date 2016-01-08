@@ -314,8 +314,8 @@ div.bg {
 }
 
 .container_fourth h4 {
-	padding: 12px 0px 0px 0px;
-	margin-bottom: -10px;
+	padding: 30px 0px 0px 0px;
+	margin-bottom: 20px;
 }
 
 .container_half h4 {
@@ -439,7 +439,7 @@ div#introduction {
 	height: 24vw;
 	text-align: center;
 	color: #FFF;
-	font-size: 30px;
+	font-size: 24px;
 	background: url('../img/introduction_bg.png') bottom center repeat-x;
 }
 
@@ -541,8 +541,8 @@ div#introduction h2 {
 	color: rgb(255,255,255);
 	padding-bottom: 0px;
 	display: block;
-	font-size: 88px; /*1024 display standard version*/
-	margin-top: -2vw;
+	font-size: 64px; /*1024 display standard version*/
+	margin-top: -1vw;
 	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -1193,6 +1193,10 @@ div.actor h6 a {
 div.actor a {
 	color: #888;
 	border-bottom: none;
+}
+
+div.actor a.red:hover, div.actor i.red {
+	color: #e53b30;
 }
 
 div.actor h6 a:hover, div#contact a:hover {
