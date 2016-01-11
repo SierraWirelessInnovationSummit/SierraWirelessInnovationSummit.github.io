@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400,600,700,900');
 
 @font-face {
     font-family: 'alrn_lt';
@@ -546,12 +546,12 @@ div#introduction h2 {
 	text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-div#introduction sub.oofiot {
-	font-size: 36px;
+sub.oofiot {
+	font-size: 45px;
 }
 
-div#introduction span.iot {
-	
+span.iot {
+	margin-left: -5px;
 }
 
 div#introduction h3 {
@@ -821,23 +821,22 @@ div#numbers h2 {
  *     AGENDA     *
  ******************/
  
-div#agenda {
-	background-color: rgb(28,28,28);
+div.agenda {
 	margin: 0 auto;
 	position: relative;
 	clear: both;
-	padding-top: 175px;
 	width: 100%;
 	padding-bottom: 100px;
 	font-size: 24px;
+	background-color: rgb(28,28,28);
+	padding-top: 175px;
 }
 
-div#agenda h2 {
-	color: #FFF;
+div.agenda h2 {
+	color: #555;
 }
 
-
-div#agenda .agenda-half {
+div.agenda .agenda-half {
 	width: 42%;
 	position: relative;
 	float: left;
@@ -854,21 +853,26 @@ span.agenda-day {
 	font-size: 20px;
  }
 
-.day2 {
+span.time {
+	font-family: 'Titillium', sans-serif;
+	font-weight: 200;
+	font-weight: normal;
+	color: rgba(255,255,255,0.5);
+	font-size: 24px;
 }
 
-div#agenda .agenda-half h3 {
+div.agenda .agenda-half h3 {
 	text-align: center;
 	color: #FFF;
 	padding: 0;
 	margin: 0;
 	font-family: 'Titillium Web', sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 64px;
 	color: #e53b30;
 }
 
-div#agenda .agenda-half h4 {
+div.agenda .agenda-half h4 {
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -877,26 +881,26 @@ div#agenda .agenda-half h4 {
 	/*font-family: 'Titillium', sans-serif;
 	font-weight: 300;*/
 	font-size: 24px;
-	letter-spacing: 2px;
-	color: rgba(255,255,255,1.0);
+	letter-spacing: 1px;
+	color: rgba(255,255,255,0.3);
 }
 
-div#agenda .agenda-half h5 {
+div.agenda .agenda-half h5 {
 	padding: 0;
 	margin: 0;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 30px;
-	font-family: 'alrn_lt', sans-serif;
+	font-family: 'alrn_ul', sans-serif;
 	/*font-family: 'Titillium', sans-serif;
 	font-weight: 300;*/
 	letter-spacing: 1px;
 	font-size: 32px;
 	clear: left;
-	color: rgba(255,255,255,1.0);
+	color: rgba(255,255,255,0.80);
 }
 
-div#agenda .agenda-content {
+div.agenda .agenda-content {
 	width: 45%;
 	position: relative;
 	float: left;
@@ -906,13 +910,13 @@ div#agenda .agenda-content {
 	padding-bottom: 25px;
 }
 
-div#agenda .agenda-content img {
+div.agenda .agenda-content img {
 	float: left;
 	width: 20%;
 	margin-right: 40px;
 }
 
-div#agenda .agenda-content h6 {
+div.agenda .agenda-content h6 {
 	padding: 0;
 	margin: 0;
 	padding-bottom: 10px;
@@ -923,40 +927,40 @@ div#agenda .agenda-content h6 {
 	color: rgba(255,255,255,1.0);
 }
 
-div#agenda .agenda-content h6.red {
+div.agenda .agenda-content h6.red {
 	color: #e53b30;
 }
 
-div#agenda .agenda-content h6.purple {
+div.agenda .agenda-content h6.purple {
 	color: #863bbf;
 }
 
-div#agenda .agenda-content h6.fresh {
+div.agenda .agenda-content h6.fresh {
 	color: #1cbbb4;
 }
 
-div#agenda .agenda-content h6.sky {
+div.agenda .agenda-content h6.sky {
 	color: #00adef;
 }
 
-div#agenda .agenda-content h6.yellow {
+div.agenda .agenda-content h6.yellow {
 	color: #ffd000;
 }
 
-div#agenda .agenda-content h6.navy {
+div.agenda .agenda-content h6.navy {
 	color: #0160cd;
 }
 
-div#agenda .agenda-content h6.gold {
+div.agenda .agenda-content h6.gold {
 	color: #d6af00;
 }
 
-div#agenda .agenda-half a, div#agenda .agenda-content a {
+div.agenda .agenda-half a, div.agenda .agenda-content a {
 	color: rgba(255,255,255,0.9);
 	border-bottom: 1px dashed rgba(255,255,255,0.9);
 }
 
-div#agenda .agenda-half a:hover, div#agenda .agenda-content a:hover {
+div.agenda .agenda-half a:hover, div.agenda .agenda-content a:hover {
 	color: #e53b30;
 	border-bottom: 1px dashed #e53b30;
 }
@@ -1058,6 +1062,7 @@ div#speakers div.speech h6 {
 div#register {
 	background-color: rgba(28,28,28,0.75);
 	text-align: center;
+	line-height: 35px;
 }
 
 div#register h3 {
