@@ -936,15 +936,15 @@ div.agenda .agenda-content h6.purple {
 }
 
 div.agenda .agenda-content h6.fresh {
-	color: #1cbbb4;
+	color: #87B527; /*1cbbb4;*/
 }
 
 div.agenda .agenda-content h6.sky {
-	color: #00adef;
+	color: #00AEAF; /*00adef;*/
 }
 
 div.agenda .agenda-content h6.yellow {
-	color: #ffd000;
+	color: #FEC221; /*ffd000;*/
 }
 
 div.agenda .agenda-content h6.navy {
