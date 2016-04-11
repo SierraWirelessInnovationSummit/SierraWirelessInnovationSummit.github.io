@@ -988,17 +988,28 @@ div#speakers div.speakerLeft {
 	padding-bottom: 100px;
 }
 
+div.speakerLeft a {
+	color: #444;
+	text-align: left;
+	font-size: 0.8vw;
+	margin-bottom: 1vw;
+	border-bottom: none;
+}
+
+
 div#speakers h3 {
+	font-family: 'alrn_ul', Helvetica, sans-serif;
 	color: #E53B30;
 	text-align: left;
-	font-size: 2vw;
+	font-size: 36px;
 	margin-bottom: 0.5vw;
 }
 
 div#speakers h4 {
+	font-family: 'alrn_ul', Helvetica, sans-serif;
 	color: #999;
 	text-align: left;
-	font-size: 1vw;
+	font-size: 24px;
 }
 
 div#speakers h5 {
@@ -1010,6 +1021,7 @@ div#speakers h5 a {
 	text-align: left;
 	font-size: 0.8vw;
 	margin-bottom: 1vw;
+	border-bottom: none;
 }
 
 div#speakers div.socials {
@@ -1023,6 +1035,7 @@ div#speakers div.socials a {
 	color: #CCC;
 	font-size: 1.0vw;
 	padding-left: 2vw;
+	border-bottom: none;
 }
 
 div#speakers div.socials a:hover {
