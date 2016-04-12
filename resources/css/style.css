@@ -999,10 +999,11 @@ div.speakerLeft a {
 
 div#speakers h3 {
 	font-family: 'alrn_ul', Helvetica, sans-serif;
-	color: #E53B30;
+	color: #0160cd;
 	text-align: left;
 	font-size: 36px;
-	margin-bottom: 0.5vw;
+	margin-bottom: 5px;
+    padding-top: 15px;
 }
 
 div#speakers h4 {
@@ -1010,6 +1011,10 @@ div#speakers h4 {
 	color: #999;
 	text-align: left;
 	font-size: 24px;
+}
+
+.blue {
+	color: #0160cd;
 }
 
 div#speakers h5 {
@@ -1032,14 +1037,14 @@ div#speakers div.socials {
 }
 
 div#speakers div.socials a {
-	color: #CCC;
+	color: rgba(1,96,205,0.2);
 	font-size: 1.0vw;
 	padding-left: 2vw;
 	border-bottom: none;
 }
 
 div#speakers div.socials a:hover {
-	color: #e53b30;
+	color: rgba(1,96,205,1.0);
 }
 
 div#speakers div.speech {
