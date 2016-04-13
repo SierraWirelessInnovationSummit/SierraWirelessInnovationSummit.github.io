@@ -861,6 +861,14 @@ span.time {
 	font-size: 24px;
 }
 
+div.agenda .agenda-half h3 {
+	font-size: 56px;
+    color: #e53b30;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	margin-bottom: -5px;
+}
+
 div.agenda .agenda-half h4 {
 	text-align: center;
 	padding: 0;
@@ -991,17 +999,17 @@ div#agenda .agenda_element_time, div#agenda .agenda_element_title, div#agenda .a
 }
 
 div#agenda .agenda_element_time {
-	width: 10%;
+	width: 8%;
 	padding-left: 1%;
 }
 
 div#agenda .agenda_element_title {
-	width: 64%;
+	width: 61%;
 	text-align: center;
 }
 
 div#agenda .agenda_element_speaker {
-	width: 25%;
+	width: 30%;
 }
 
 div#agenda .agenda_element_time h4 {
