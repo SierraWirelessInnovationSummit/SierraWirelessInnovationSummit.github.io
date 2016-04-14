@@ -1067,9 +1067,9 @@ div#agenda .agenda_element_time h4.fresh, div#agenda .agenda_element_title h3.fr
 }
 
 div#agenda .agenda_element_speaker img {
-	width: 2.0vw;
+	width: 32px;
 	float: left;
-	margin: 0 1vw 4vw 1vw;
+	margin: 0 10px 50px 0px;
 }
 
 div#agenda .agenda_element_speaker h3 {
