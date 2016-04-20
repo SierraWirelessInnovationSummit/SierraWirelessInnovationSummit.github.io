@@ -997,6 +997,18 @@ div#agenda .agenda_element {
 	height: 170px;
 }
 
+.height200 {
+	height: 200px;
+}
+
+.height210 {
+	height: 210px;
+}
+
+.height300 {
+	height: 300px;
+}
+
 .white4 {
 	background-color: rgba(255,255,255,0.04);
 }
