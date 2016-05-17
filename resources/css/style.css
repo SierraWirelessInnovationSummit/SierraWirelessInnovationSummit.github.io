@@ -861,7 +861,7 @@ span.time {
 	font-size: 24px;
 }
 
-div.agenda .agenda-half h3 {
+h3.agenda-bt, div.agenda .agenda-half h3 {
 	font-size: 56px;
     color: #e53b30;
 	font-family: 'Titillium Web', sans-serif;
@@ -924,6 +924,30 @@ div.agenda .agenda-content h6 {
 	color: rgba(255,255,255,1.0);
 }
 
+h8.table-speaker {
+	font-size: 14px;
+	text-align:left;
+	font-family:'alrn_lt';
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	color:rgba(255,255,255,0.7);
+	display: block;
+}
+
+h8.table-jobtitle {
+	font-size: 12px;
+	text-align:left;
+	font-family:'alrn_lt';
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	color:rgba(255,255,255,0.5);
+	margin-bottom:5px;
+	display: block;
+}
+
+
 div.agenda .agenda-content h6.red {
 	color: #e53b30;
 }
@@ -961,6 +985,26 @@ div.agenda .agenda-half a:hover, div.agenda .agenda-content a:hover {
 	color: #e53b30;
 	border-bottom: 1px dashed #e53b30;
 }
+
+div.agenda .agenda-half table a.companywebsite {
+	display:inline-block;
+	font-size:12px;
+	margin: 0;
+	color: rgba(255,255,255,0.35);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-bottom: none;
+}
+
+div.agenda .agenda-half img.companyicon {
+	width:12px;
+	float:left;
+	margin:1px 5px 0px 0px;
+}
+
 
 div#agenda .agenda_element {
 	width: 87.5%;
@@ -1036,7 +1080,8 @@ div#agenda .agenda_element_speaker {
 	width: 30%;
 }
 
-div#agenda .agenda_element_time h4 {
+h7.agenda-bt, div#agenda .agenda_element_time h4 {
+	font-weight: normal;
 	font-weight: 300;
 	font-family: 'Titillium', sans-serif;
 	font-size: 18px;
@@ -1064,7 +1109,7 @@ div#agenda .agenda_element_time h5 {
 	color: #e53b30;
 }
 
-div#agenda .agenda_element_title h3 {
+h8.agenda-bt, div#agenda .agenda_element_title h3 {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
