@@ -1237,7 +1237,7 @@ div#speakers h5 {
 div#speakers h5 a {
 	color: #444;
 	text-align: left;
-	font-size: 0.8vw;
+	font-size: 13px;
 	margin-bottom: 1vw;
 	border-bottom: none;
 }
@@ -1246,12 +1246,12 @@ div#speakers div.socials {
 	position: absolute;
 	top: 150px;
 	right: 0;
-	font-size: 0.6vw;
+	font-size: 13px;
 }
 
 div#speakers div.socials a {
 	color: rgba(1,96,205,0.2);
-	font-size: 1.0vw;
+	font-size: 16px;
 	padding-left: 2vw;
 	border-bottom: none;
 }
@@ -1270,12 +1270,12 @@ div#speakers div.speech {
 	-o-border-radius: 10px;
 	border-radius: 10px;
 	margin-left: 300px;
-	font-size: 1vw;
+	font-size: 16px;
 }
 
 div#speakers div.speech h5 {
 	color: #444;
-	font-size: 1.2vw;
+	font-size: 24px;
 	margin-bottom: 0;
 }
 
@@ -1284,6 +1284,7 @@ div#speakers div.speech h6 {
 	margin: 0;
 	padding-left: 37px;
 	margin-bottom: 1vw;
+	font-size: 13px;
 }
 
 /******************
