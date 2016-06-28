@@ -999,6 +999,19 @@ div.agenda .agenda-half table a.companywebsite {
 	border-bottom: none;
 }
 
+div.agenda .agenda-half table a.presentation, div.agenda_element_title a.presentation {
+	display:inline-block;
+	font-size:18px;
+	margin: 0;
+	color: #0378ff;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-bottom: none;
+}
+
 div.agenda .agenda-half img.companyicon {
 	width:12px;
 	float:left;
