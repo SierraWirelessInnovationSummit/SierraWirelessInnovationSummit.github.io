@@ -1012,6 +1012,10 @@ div.agenda .agenda-half table a.presentation, div.agenda_element_title a.present
 	border-bottom: none;
 }
 
+div.agenda_element_title a.presentation {
+	color: #e53b30;
+}
+
 div.agenda .agenda-half img.companyicon {
 	width:12px;
 	float:left;
@@ -1040,6 +1044,10 @@ div#agenda .agenda_element {
 
 .height145 {
 	height: 145px;
+}
+
+.height155 {
+	height: 155px;
 }
 
 .height160 {
