@@ -999,7 +999,7 @@ div.agenda .agenda-half table a.companywebsite {
 	border-bottom: none;
 }
 
-div.agenda .agenda-half table a.presentation, div.agenda_element_title a.presentation {
+div.agenda .agenda-half table a.presentation, div.agenda .agenda-half table a.presentation-st, div.agenda_element_title a.presentation {
 	display:inline-block;
 	font-size:18px;
 	margin: 0;
@@ -1012,7 +1012,7 @@ div.agenda .agenda-half table a.presentation, div.agenda_element_title a.present
 	border-bottom: none;
 }
 
-div.agenda_element_title a.presentation {
+div.agenda_element_title a.presentation, div.agenda .agenda-half table a.presentation-st {
 	color: #e53b30;
 }
 
